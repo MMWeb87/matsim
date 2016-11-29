@@ -15,10 +15,12 @@ import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 /** 
  * @author balac
  */
+
+// highest level: keeps track of all companies and all the services. Probably not much change needed.
 public class CarsharingSupplyContainer implements CarsharingSupplyInterface {
 	private Map<String, CompanyContainer> companies = new HashMap<String, CompanyContainer>();
 	private Map<String, CSVehicle> allVehicles = new HashMap<String, CSVehicle>();
-	private Map<CSVehicle, Link> allVehicleLocations = new HashMap<CSVehicle, Link>();
+	private Map<CSVehicle, Link> allVehicleLocations = new HashMap<CSVehicle, Link>(); // important that every vehicle iplement this
 	private Set<String> companyNames;
 	private Scenario scenario;
 	

@@ -67,9 +67,12 @@ public class CarsharingPersonDriverAgentImpl implements MobsimDriverAgent, Mobsi
 		// is car sharing
 		if (carsharingLeg(pe)) {
 			
-			// returns a list of plan elements
+			// returns a list of plan elements like a leg or activity. Can be anything, like sequence of ten PlanElements
+			// here -> trip will be replaced by many trips. Go crazy here. Depends how to route car sharing framewokr.
+			// With this one line, it communicates with matSim
 			List<PlanElement> newTrip = carsharingManager.reserveAndrouteCarsharingTrip(plan, legToBerouted.getMode(), 
 					legToBerouted, now);
+
 			if (newTrip == null) {
 				this.setStateToAbort(now);
 			}

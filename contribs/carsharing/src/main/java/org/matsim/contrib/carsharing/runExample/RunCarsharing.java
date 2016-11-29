@@ -61,13 +61,15 @@ public class RunCarsharing {
 
 		final Controler controler = new Controler( sc );
 		
-		installCarSharing(controler);
+		installCarSharing(controler); // static from anywhere else, makes sure all there
 		
 		controler.run();
 
 	}
 
 	public static void installCarSharing(final Controler controler) {		
+		
+		// might need to adapt this function.
 		
 		final Scenario scenario = controler.getScenario();
 		CarsharingXmlReaderNew reader = new CarsharingXmlReaderNew(scenario.getNetwork());
