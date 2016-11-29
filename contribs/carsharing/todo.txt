@@ -1,0 +1,29 @@
+Todo
+
+Report: 
+- Introduction paper.
+
+Programming
+- Manager: reserves vehicles and reserves parking.
+- Implement in reservesVehicles function a check if the car can be rented (depends on charge)
+ 	- add variable rejection rate (write to variable) 
+- Add ranges to EV vehicles
+- Add hasChargingPoint, voltage attribute to station.
+
+Data Preparation
+- Put stations on map 
+- Populate with people
+
+
+Figure out where to implement
+- fleetsize?
+- charging speed (depends ond car and voltage)
+- config file.
+- how to choice where the charging stations are.
+- 
+
+
+Decisions:
+- which cars to use
+- charging speed
+. Membership
