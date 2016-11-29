@@ -40,7 +40,7 @@ import org.matsim.core.controler.Controler;
 import org.matsim.core.scenario.ScenarioUtils;
 
 /** 
- * @author balac, 
+ * @author balac, Marc Melliger, 
  * 
  * 
  */
