@@ -1,5 +1,8 @@
 Todo
 
+Report: 
+- Introduction paper.
+
 Programming
 - Manager: reserves vehicles and reserves parking.
 - Implement in reservesVehicles function a check if the car can be rented (depends on charge)
