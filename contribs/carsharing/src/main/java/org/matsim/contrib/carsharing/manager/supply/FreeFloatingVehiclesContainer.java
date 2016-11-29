@@ -78,6 +78,7 @@ public class FreeFloatingVehiclesContainer implements VehiclesContainer{
 		return availableFFvehiclesMap.get(vehicle);
 	}
 
+	// finds any type of vehicle that is in search distance
 	@Override
 	public CSVehicle findClosestAvailableVehicle(Link startLink, String typeOfVehicle, double searchDistance) {
 		Collection<CSVehicle> location = 

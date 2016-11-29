@@ -58,12 +58,16 @@ public class CarsharingPersonDriverAgentImpl implements MobsimDriverAgent, Mobsi
 	@Override
 	public final void endActivityAndComputeNextState(final double now) {
 
+		// Plans what he's going to do if his next trip is carsharing
 		Plan plan = this.getModifiablePlan() ; 
 		PlanElement pe = this.getNextPlanElement();
 		int nextElementIndex = plan.getPlanElements().indexOf(pe);
 		Leg legToBerouted = (Leg)pe;
+
+		// is car sharing
 		if (carsharingLeg(pe)) {
 			
+			// returns a list of plan elements
 			List<PlanElement> newTrip = carsharingManager.reserveAndrouteCarsharingTrip(plan, legToBerouted.getMode(), 
 					legToBerouted, now);
 			if (newTrip == null) {
