@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE memberships SYSTEM "src/main/resources/dtd/CSMembership.dtd">
+<memberships>
+	<person id="0">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="1">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="10">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="100">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="101">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="102">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="103">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="104">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="105">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+	<person id="106">
+		<company id="BEVRule">
+			<carsharing name="oneway"/>
+		</company>
+	</person>
+</memberships>
