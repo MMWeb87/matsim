@@ -98,4 +98,6 @@ public class OneWayCarsharingStation implements CarsharingStation{
 		
 	}
 	
+	// Marc: here we could make a function to check the charge of the vehicles in the Station. 
+	
 }

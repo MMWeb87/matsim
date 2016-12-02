@@ -65,6 +65,8 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 		boolean keepTheCar = keepTheCarModel.keepTheCarDuringNextActivity(durationOfNextActivity, plan.getPerson(), carsharingType);	
 		//TODO: create a method for getting the search distance
 		double searchDistance = 1000.0;
+
+		// Agents has already a vehicle.
 		if (vehicle != null) {
 			
 			if ((willHaveATripFromLocation && keepTheCar) || (willHaveATripFromLocation && carsharingType.equals("twoway"))) {
@@ -81,6 +83,7 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 					
 					if (parkingLocation == null)
 						return null;
+					
 					destinationLink = parkingLocation;
 					vehiclesContainer.reserveParking(destinationLink);
 					
@@ -106,6 +109,10 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 
 			String companyId = chooseCompany.pickACompany(plan, legToBeRouted, time, typeOfVehicle);
 			if (!companyId.equals("")) {
+				
+				// Marc: Here we need to insert the check for the range, 
+				// i.e. write a replacement function for findClosestAvailableVehicle that encapsulate this function
+				// and delivers ad 
 				vehicle = this.carsharingSupplyContainer.findClosestAvailableVehicle(startLink,
 						carsharingType, typeOfVehicle, companyId, searchDistance);
 				if (vehicle == null)

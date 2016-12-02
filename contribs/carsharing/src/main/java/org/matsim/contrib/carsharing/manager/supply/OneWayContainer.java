@@ -72,6 +72,11 @@ public class OneWayContainer implements VehiclesContainer{
 			
 			Coord coord = station.getLink().getCoord();
 			
+			// Marc: Maybe here is a good place to implement the charging rule as a function.
+			// Like hasSufficiently charged vehicles
+			// For that we need a TargetLink, right?
+			
+			
 			if (CoordUtils.calcEuclideanDistance(startLink.getCoord(), coord) < closestFound 
 					&& ((OneWayCarsharingStation)station).getNumberOfVehicles(typeOfVehicle) > 0) {
 				closest = station;
