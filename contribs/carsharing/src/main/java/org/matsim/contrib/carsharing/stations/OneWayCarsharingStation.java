@@ -17,15 +17,16 @@ public class OneWayCarsharingStation implements CarsharingStation{
 	private String stationId;
 	private int avaialbleParkingSpots;
 	private Link link;
-
+// elyas: private int chargingMachine;
+	
 	public OneWayCarsharingStation(String stationId, Link link, Map<String, Integer> numberOfvehiclesPerType,
-			Map<String, ArrayList<CSVehicle>> vehiclesPerType, int availableParkingSpots) {
+			Map<String, ArrayList<CSVehicle>> vehiclesPerType, int availableParkingSpots)/*int chargingMachine*/ {
 		this.link = link;
 		this.stationId = stationId;
 		this.numberOfvehiclesPerType = numberOfvehiclesPerType;
 		this.vehiclesPerType = vehiclesPerType;
 		this.setAvaialbleParkingSpots(availableParkingSpots);
-
+// this.chargingMachine = chargingMachine;
 	}
 	
 	public int getNumberOfVehicles(String type) {
@@ -47,7 +48,11 @@ public class OneWayCarsharingStation implements CarsharingStation{
 		this.numberOfvehiclesPerType.put(type, currentNumberOfVehicles);
 		
 	}
+	/* Elyas: Maybe here we have to add charging machine and check for charging availability: 
+	public void addChargingMachine(...){
 	
+	}
+	*/
 	public void addCar(String type, CSVehicle vehicle){
 		
 		ArrayList<CSVehicle> currentVehicles = this.vehiclesPerType.get(type);		
@@ -66,6 +71,9 @@ public class OneWayCarsharingStation implements CarsharingStation{
 
 		this.avaialbleParkingSpots = i;
 	}
+	/* private void setAvailableChargingMachine(int i){
+	this.availableCharingMachine = i;
+	*/
 
 	public void reserveParkingSpot() {
 

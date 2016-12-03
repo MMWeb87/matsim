@@ -8,7 +8,7 @@ Programming
 - Implement in reservesVehicles function a check if the car can be rented (depends on charge)
  	- add variable rejection rate (write to variable) 
 - Add ranges to EV vehicles (Marc)
-- Add hasChargingPoint, voltage attribute to station. (Elyas)
+- Add hasChargingPoint, voltage attribute to station. (Elyas) -> don't care about voltage, related to charging time parameter 
 
 Data Preparation
 - Put stations on map 
