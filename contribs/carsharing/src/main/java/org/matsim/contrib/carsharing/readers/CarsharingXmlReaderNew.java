@@ -19,6 +19,7 @@ import org.matsim.contrib.carsharing.qsim.FreefloatingAreas;
 import org.matsim.contrib.carsharing.stations.CarsharingStation;
 import org.matsim.contrib.carsharing.stations.Charger;
 import org.matsim.contrib.carsharing.stations.OneWayCarsharingStation;
+import org.matsim.contrib.carsharing.stations.OneWayCarsharingStationWithCharger;
 import org.matsim.contrib.carsharing.stations.TwoWayCarsharingStation;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 import org.matsim.contrib.carsharing.vehicles.FFVehicleImpl;
@@ -211,7 +212,7 @@ public class CarsharingXmlReaderNew extends MatsimXmlParser {
 		// Marc; new eVehicle
 		else if (name.equals("charger")) {
 			
-			Charger charger = new Charger(atts.getValue("chargerID"), Integer.parseInt(atts.getValue("power")));
+			Charger charger = new Charger(atts.getValue("chargerID"), Double.parseDouble(atts.getValue("power")));
 			chargers.add(charger);
 			// TODO: add allChargers?
 
@@ -307,8 +308,16 @@ public class CarsharingXmlReaderNew extends MatsimXmlParser {
 				twStations.add(station);
 			}
 			else {
-				OneWayCarsharingStation station = new OneWayCarsharingStation(id, link, numberOfVehiclesPerType,
+				// Marc: implemented Station with chargers
+				OneWayCarsharingStation station;
+				
+				if(chargers.get(0)== null){
+					station = new OneWayCarsharingStation(id, link, numberOfVehiclesPerType,
 						vehiclesPerType, avaialbleParkingSpots);
+				} else {
+					station = new OneWayCarsharingStationWithCharger(id, link, numberOfVehiclesPerType,
+							vehiclesPerType, avaialbleParkingSpots, chargers.get(0));
+				}
 				
 				owvehicleLocationQuadTree.put(link.getCoord().getX(), link.getCoord().getY(), station);
 				this.onewaycarsharingstationsMap.put(id, station);
