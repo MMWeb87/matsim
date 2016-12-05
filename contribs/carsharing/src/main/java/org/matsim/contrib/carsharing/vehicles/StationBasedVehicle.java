@@ -1,6 +1,6 @@
 package org.matsim.contrib.carsharing.vehicles;
 /** 
- * @author balac, Marc Melliger
+ * @author balac
  */
 public class StationBasedVehicle implements CSVehicle{
 	
@@ -10,10 +10,6 @@ public class StationBasedVehicle implements CSVehicle{
 	private String csType;
 	private String companyId;
 	
-	private String range;
-	private String chargingLevel;
-	private String energyConsumption; // Decide how we represent range, and rest of range...
-
 	public StationBasedVehicle(String vehicleType, String vehicleId, 
 			String stationId, String csType, String companyId) {
 		
@@ -43,16 +39,6 @@ public class StationBasedVehicle implements CSVehicle{
 	@Override
 	public String getCompanyId() {
 		return companyId;
-	}	
-
-	
-	public String getRange() {
-		return range;
-	}	
-	public String getChargingLevel() {
-		return chargingLevel;
-	}	
-	public String getEnergyConsumption() {
-		return energyConsumption;
-	}		
+	}
+		
 }
