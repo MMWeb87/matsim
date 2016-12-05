@@ -20,7 +20,7 @@
           x  	       CDATA #REQUIRED
           y       CDATA #REQUIRED>
 
-<!ELEMENT oneway          (vehicle*)>
+<!ELEMENT oneway          (vehicle*,electrovehicle*, charger*)>
 <!ATTLIST oneway
           id           CDATA   #REQUIRED
           x  	       CDATA #REQUIRED
@@ -39,3 +39,14 @@
           type             CDATA                    #REQUIRED
           vehicleID            CDATA                    #REQUIRED>
           
+<!ELEMENT electrovehicle         EMPTY>
+<!ATTLIST electrovehicle
+          type             CDATA                    #REQUIRED
+          vehicleID            CDATA                    #REQUIRED
+          batteryCapacity            CDATA                    #REQUIRED
+          energyConsumption            CDATA                    #REQUIRED>
+          
+<!ELEMENT charger         EMPTY>
+<!ATTLIST charger
+          chargerID            CDATA                    #REQUIRED
+          power            CDATA                    #REQUIRED>
