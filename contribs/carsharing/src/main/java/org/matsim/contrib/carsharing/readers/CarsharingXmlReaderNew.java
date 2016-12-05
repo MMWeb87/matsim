@@ -196,7 +196,7 @@ public class CarsharingXmlReaderNew extends MatsimXmlParser {
 			
 		}
 		// Marc; new eVehicle
-		else if (name.equals("evehicle")) {
+		else if (name.equals("electrovehicle")) {
 			
 			StationBasedBEV vehicle = new StationBasedBEV(atts.getValue("type"), atts.getValue("vehicleID"), id, csType, companyName, 
 					Integer.parseInt(atts.getValue("energyConsumption")), Integer.parseInt(atts.getValue("batteryCapacity")));
