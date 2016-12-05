@@ -1,4 +1,7 @@
 package org.matsim.contrib.carsharing.vehicles;
+
+import org.matsim.contrib.carsharing.stations.Charger;
+
 /** 
  * Battery Electric Vehicle Object. 
  * @author balac, Marc Melliger
@@ -6,18 +9,24 @@ package org.matsim.contrib.carsharing.vehicles;
 public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, BEVehicle{
 	
 	
-	private int chargingLevel = 0; //kWh
-	private int energyConsumption; // kWh/km
-	private int batteryCapacity; //kWh 
+	private double chargingLevel; //kWh
+	private double energyConsumption; // kWh/km
+	private double batteryCapacity; //kWh 
+	private boolean fullyCharged;
+	private Charger attachedCharger = null;
 
 	public StationBasedBEV(String vehicleType, String vehicleId, 
 			String stationId, String csType, String companyId,
-			int energyConsumption, int batteryCapacity) {
+			double energyConsumption, double batteryCapacity) {
 		
 		super(vehicleType, vehicleId, stationId, csType, companyId);
 		
 		this.energyConsumption = energyConsumption;
 		this.batteryCapacity = batteryCapacity;
+		
+		// fully charge all Vehicles in the beginning
+		chargingLevel = batteryCapacity; 
+		fullyCharged = true;
 		
 
 	}	
@@ -26,7 +35,7 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 	 * @return the chargingLevel
 	 */
 	@Override
-	public int getChargingLevel() {
+	public double getChargingLevel() {
 		return chargingLevel;
 	}
 	
@@ -34,28 +43,57 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 	 * @param chargingLevel the chargingLevel to set
 	 */
 	@Override
-	public void setChargingLevel(int chargingLevel) {
+	public void setChargingLevel(double chargingLevel) {
 		
-		// No higher levels than the batteryCapacity are allowed
-		if(chargingLevel <= batteryCapacity ){
+		if(chargingLevel >= 0 && chargingLevel <= batteryCapacity){
 			this.chargingLevel = chargingLevel;
-		} else {
+			fullyCharged = false;
+		} else if(chargingLevel >= batteryCapacity) {
 			this.chargingLevel = batteryCapacity;
+			fullyCharged = true;
+		} else if(chargingLevel < 0){
+			this.chargingLevel = 0;
+			fullyCharged = false;
+
 		}
+	}
+	
+	public void charge(double charge){
+		setChargingLevel(getChargingLevel()+charge);
+	}
+	
+	public void uncharge(double charge){
+		setChargingLevel(getChargingLevel()-charge);
 	}
 
 	
 	@Override
-	public int getEnergyConsumption() {
+	public double getEnergyConsumption() {
 		return energyConsumption;
 	}
 
 
 	@Override
-	public int getBatteryCapacity() {
+	public double getBatteryCapacity() {
 		return batteryCapacity;
 	}
 
+
+	public boolean isFullyCharged() {
+		return fullyCharged;
+	}
+
+	public Charger getAttachedCharger() {
+		return attachedCharger;
+	}
+
+	public void attachCharger(Charger attachedCharger) {
+		this.attachedCharger = attachedCharger;
+	}
+
+	public void removeCharger() {
+		this.attachedCharger = null;
+	}
 
 
 		
