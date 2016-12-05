@@ -79,12 +79,16 @@ public class OneWayContainer implements VehiclesContainer{
 			
 			if (CoordUtils.calcEuclideanDistance(startLink.getCoord(), coord) < closestFound 
 					&& ((OneWayCarsharingStation)station).getNumberOfVehicles(typeOfVehicle) > 0) {
+				// && vehicle.Class.checkCharging staturs.
 				closest = station;
 				closestFound = CoordUtils.calcEuclideanDistance(startLink.getCoord(), coord);
 			}
 		}		
 		if (closest != null) {
 			CSVehicle vehicleToBeUsed = ((OneWayCarsharingStation)closest).getVehicles(typeOfVehicle).get(0);
+			
+			// if TODO: vehicleToBeUsed.getChargingLevel > 0;
+			
 			return vehicleToBeUsed;
 		}		
 		return null;
