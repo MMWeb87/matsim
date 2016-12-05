@@ -81,18 +81,18 @@ public class CarsharingLegScoringFunction extends org.matsim.core.scoring.functi
 		String mode = leg.getMode();
 		if (carsharingLegs.contains(mode)) {
 					
-			if (("oneway").equals(mode)) {				
+			if (("oneway_vehicle").equals(mode)) {				
 				tmpScore += Double.parseDouble(this.config.getModule("OneWayCarsharing").getParams().get("constantOneWayCarsharing"));
 				tmpScore += travelTime * Double.parseDouble(this.config.getModule("OneWayCarsharing").getParams().get("travelingOneWayCarsharing")) / 3600.0;
 			}		
 		
-			else if (("freefloating").equals(mode)) {				
+			else if (("freefloating_vehicle").equals(mode)) {				
 				
 				tmpScore += Double.parseDouble(this.config.getModule("FreeFloating").getParams().get("constantFreeFloating"));
 				tmpScore += travelTime * Double.parseDouble(this.config.getModule("FreeFloating").getParams().get("travelingFreeFloating")) / 3600.0;
 			}		
 			
-			else if (("twoway").equals(mode)) {				
+			else if (("twoway_vehicle").equals(mode)) {				
 				
 				tmpScore += Double.parseDouble(this.config.getModule("TwoWayCarsharing").getParams().get("constantTwoWayCarsharing"));
 				tmpScore += travelTime * Double.parseDouble(this.config.getModule("TwoWayCarsharing").getParams().get("travelingTwoWayCarsharing")) / 3600.0;
