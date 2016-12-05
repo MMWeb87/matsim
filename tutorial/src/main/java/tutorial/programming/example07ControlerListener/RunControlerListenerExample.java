@@ -32,7 +32,7 @@ public class RunControlerListenerExample {
 			@Override
 			public void install() {
 				//add an instance of this class as ControlerListener
-				this.addControlerListenerBinding().to(MyControlerListener.class);
+				this.addControlerListenerBinding().to(MyControlerListener.class); // replace with own listener
 
 				// also bind an event handler which will be needed in the controler listener:
 				this.bind(MyEventHandler.class);
