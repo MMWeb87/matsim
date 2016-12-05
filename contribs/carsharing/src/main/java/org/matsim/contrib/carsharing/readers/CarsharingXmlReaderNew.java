@@ -21,6 +21,7 @@ import org.matsim.contrib.carsharing.stations.OneWayCarsharingStation;
 import org.matsim.contrib.carsharing.stations.TwoWayCarsharingStation;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 import org.matsim.contrib.carsharing.vehicles.FFVehicleImpl;
+import org.matsim.contrib.carsharing.vehicles.StationBasedBEV;
 import org.matsim.contrib.carsharing.vehicles.StationBasedVehicle;
 import org.matsim.core.network.NetworkUtils;
 import org.matsim.core.network.SearchableNetwork;
@@ -189,6 +190,16 @@ public class CarsharingXmlReaderNew extends MatsimXmlParser {
 		else if (name.equals("vehicle")) {
 			
 			StationBasedVehicle vehicle = new StationBasedVehicle(atts.getValue("type"), atts.getValue("vehicleID"), id, csType, companyName);
+			vehicles.add(vehicle);
+			this.allVehicles.put(atts.getValue("vehicleID"), vehicle);
+			this.allVehicleLocations.put(vehicle, link);
+			
+		}
+		// Marc; new eVehicle
+		else if (name.equals("evehicle")) {
+			
+			StationBasedBEV vehicle = new StationBasedBEV(atts.getValue("type"), atts.getValue("vehicleID"), id, csType, companyName, 
+					Integer.parseInt(atts.getValue("energyConsumption")), Integer.parseInt(atts.getValue("batteryCapacity")));
 			vehicles.add(vehicle);
 			this.allVehicles.put(atts.getValue("vehicleID"), vehicle);
 			this.allVehicleLocations.put(vehicle, link);
