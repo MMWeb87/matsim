@@ -5,25 +5,25 @@ import org.matsim.contrib.carsharing.vehicles.BEVehicle;
 public class Charger {
 
 	private String chargerID;
-	private int power; //kW
+	private double power; //kW
 	
-	public Charger(String chargerID, int power) {
+	public Charger(String chargerID, double power) {
 		this.chargerID = chargerID;
 		this.power = power;
 	}
 	
 	/**
-	 * Charge for every tick
+	 * Charge from specific charger for every tick
 	 * @param vehicle
 	 */
-	public static BEVehicle chargeVehicle(BEVehicle vehicle){
+	public void chargeVehicle(BEVehicle vehicle){
 		
-		// charing function
-		
-		
-		return vehicle;
-		
-
+		if(!vehicle.isFullyCharged()){
+			// charing function: kW * tick[s] / 3600 -> kWh
+			double charge = power * (1/3600);
+			
+			vehicle.charge(charge);
+		}
 		
 	}
 
@@ -37,7 +37,7 @@ public class Charger {
 	/**
 	 * @return the power
 	 */
-	public int getPower() {
+	public double getPower() {
 		return power;
 	}
 	
