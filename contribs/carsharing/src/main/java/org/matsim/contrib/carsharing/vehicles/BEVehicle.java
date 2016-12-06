@@ -17,6 +17,8 @@ public interface BEVehicle{
 	public Charger getAttachedCharger();
 	public void attachCharger(Charger attachedCharger);
 	public void removeCharger();
+	
+	public void driveAndUncharge(double distance);
 
 
 }
