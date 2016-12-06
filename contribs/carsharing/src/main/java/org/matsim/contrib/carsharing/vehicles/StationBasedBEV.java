@@ -94,7 +94,16 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 	public void removeCharger() {
 		this.attachedCharger = null;
 	}
-
+	
+	/**
+	 * @param distance Distance in km's
+	 */
+	public void driveAndUncharge(double distance){
+		
+		// TODO: find out if meters of km.
+		uncharge(energyConsumption * distance);
+		
+	}
 
 		
 }
