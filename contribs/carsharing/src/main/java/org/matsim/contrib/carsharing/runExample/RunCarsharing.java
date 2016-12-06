@@ -94,6 +94,7 @@ public class RunCarsharing {
 		carsharingSupplyContainer.populateSupply();
 		final KeepingTheCarModel keepingCarModel = new KeepingTheCarModelExample();
 		final ChooseTheCompany chooseCompany = new ChooseTheCompanyExample();
+		// TODO: for now only ecars. Maybe later mix with conventional other cars.
 		final ChooseVehicleType chooseCehicleType = new ChooseVehicleTypeExample();
 		final RouterProvider routerProvider = new RouterProviderImpl();
 		final CurrentTotalDemand currentTotalDemand = new CurrentTotalDemand(controler.getScenario().getNetwork());

@@ -15,7 +15,8 @@ public class ChooseVehicleTypeExample implements ChooseVehicleType {
 	@Override
 	public String getPreferredVehicleType(Plan plan, Leg currentLeg){
 		
-		String vehicleType = "car";
+		
+		String vehicleType = "ecar";
 		return vehicleType;
 	}
 
