@@ -28,6 +28,7 @@ import org.matsim.contrib.carsharing.vehicles.StationBasedVehicle;
 import org.matsim.core.api.experimental.events.EventsManager;
 import org.matsim.core.controler.events.IterationStartsEvent;
 import org.matsim.core.controler.listener.IterationStartsListener;
+import org.matsim.core.utils.geometry.CoordUtils;
 
 import com.google.inject.Inject;
 
@@ -79,8 +80,9 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 				
 					CompanyContainer companyContainer = this.carsharingSupplyContainer.getCompany(vehicle.getCompanyId());
 					VehiclesContainer vehiclesContainer = companyContainer.getVehicleContainer(carsharingType);
-					Link parkingLocation = vehiclesContainer.findClosestAvailableParkingLocation(destinationLink, searchDistance);					
 					
+					Link parkingLocation = vehiclesContainer.findClosestAvailableParkingLocation(destinationLink, searchDistance);					
+
 					if (parkingLocation == null)
 						return null;
 					
@@ -96,6 +98,9 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 					destinationLink = parkingStation.getLink();
 				}			
 				
+				
+
+						
 				return this.routerProvider.routeCarsharingTrip(plan, time, legToBeRouted, carsharingType, vehicle,
 						startLink, destinationLink, false, true);				
 			}			
@@ -109,10 +114,16 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 
 			String companyId = chooseCompany.pickACompany(plan, legToBeRouted, time, typeOfVehicle);
 			if (!companyId.equals("")) {
+					
+				// Relevant distance for reservation of BEV -> estimate if enough charge for destination 
+				if((carsharingType.equals("oneway"))){
+					// TODO: Improve Implementation of distance to destination. But how: need to route already. 
+					// --> For now like 1.2 time air distance?
+					double distanceFactor = 1.2;
+					double distance = distanceFactor * CoordUtils.calcEuclideanDistance(startLink.getCoord(), destinationLink.getCoord());
+					((OneWayContainer)this.carsharingSupplyContainer).setDistance(distance);
+				}
 				
-				// Marc: Here we need to insert the check for the range, 
-				// i.e. write a replacement function for findClosestAvailableVehicle that encapsulate this function
-				// and delivers ad 
 				vehicle = this.carsharingSupplyContainer.findClosestAvailableVehicle(startLink,
 						carsharingType, typeOfVehicle, companyId, searchDistance);
 				if (vehicle == null)
