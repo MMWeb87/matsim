@@ -9,6 +9,7 @@ import org.matsim.api.core.v01.events.PersonArrivalEvent;
 import org.matsim.api.core.v01.events.PersonDepartureEvent;
 import org.matsim.api.core.v01.events.PersonEntersVehicleEvent;
 import org.matsim.api.core.v01.events.PersonLeavesVehicleEvent;
+import org.matsim.api.core.v01.events.VehicleLeavesTrafficEvent;
 import org.matsim.api.core.v01.events.handler.PersonArrivalEventHandler;
 import org.matsim.api.core.v01.events.handler.PersonDepartureEventHandler;
 import org.matsim.api.core.v01.events.handler.PersonEntersVehicleEventHandler;
@@ -31,7 +32,7 @@ import com.google.inject.Inject;
  */
 public class PersonArrivalDepartureHandler implements PersonDepartureEventHandler, PersonLeavesVehicleEventHandler, 
 	PersonArrivalEventHandler, PersonEntersVehicleEventHandler {	
-
+// implements LinkEnterEvent, LinkLeaveEvent
 	@Inject	private CarsharingManagerInterface carsharingManager;
 	@Inject private CurrentTotalDemand currentDemand;
 	@Inject private CarsharingSupplyInterface carsharingSupply;
@@ -44,6 +45,25 @@ public class PersonArrivalDepartureHandler implements PersonDepartureEventHandle
 
 	Map<Id<Person>, Id<Vehicle>> personLeavesVehicleMap = new HashMap<Id<Person>, Id<Vehicle>>();
 
+	
+	/*//Elyas: lentgh of links in [m]
+	 
+	 
+	 private double distanceCarOnTravel = 0.0;
+	 
+	 public double getTotalTravelDistance() {
+		return this.distanceCarOnTravel ;
+	}
+	public void handleEvent(LinkEnterEvent event) {
+		this.distanceCarOnTravel += event.getDistance() or event.getLinkLength();
+	}
+	in public void reset(int iteration)
+	this.distanceCarOnTravel =0.0;
+	
+	//call for id at some point?
+	//energyCons ? 
+	*/
+	
 	@Override
 	public void reset(int iteration) {
 		personLeavesVehicleMap = new HashMap<Id<Person>, Id<Vehicle>>();
