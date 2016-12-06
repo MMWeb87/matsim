@@ -1,14 +1,13 @@
 package org.matsim.contrib.carsharing.stations;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 
 import org.matsim.api.core.v01.network.Link;
 import org.matsim.contrib.carsharing.vehicles.BEVehicle;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 /** 
- * @author balac
+ * @author Marc Melliger
  */
 
 public class OneWayCarsharingStationWithCharger extends OneWayCarsharingStation implements CarsharingStation{
@@ -26,10 +25,13 @@ public class OneWayCarsharingStationWithCharger extends OneWayCarsharingStation 
 	public void removeCar(CSVehicle vehicle) {
 		
 		super.removeCar(vehicle);
-		// here?(BEVehicle)vehicle.removeCharger();		
+		((BEVehicle)vehicle).removeCharger();		
 		
 	}
-	
-	// Marc: here we could make a function to check the charge of the vehicles in the Station. 
-	
+
+	public Charger getCharger() {
+		return charger;
+	}
+
+		
 }
