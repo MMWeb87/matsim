@@ -110,7 +110,9 @@ public class OneWayContainer implements VehiclesContainer{
 
 					if(sufficientlyChargedBEV(vehicle, distance)){
 						vehicleToBeUsed = vehicle;
-					}
+					} 
+					// TODO: rejection rate
+					
 				} else {
 					// conventional vehicle -> no restrictions.
 					vehicleToBeUsed = vehicle;

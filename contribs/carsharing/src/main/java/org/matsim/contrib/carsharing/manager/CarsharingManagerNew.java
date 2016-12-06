@@ -120,6 +120,7 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 					// TODO: Improve Implementation of distance to destination. But how: need to route already. 
 					// --> For now like 1.2 time air distance?
 					double distanceFactor = 1.2;
+					
 					double distance = distanceFactor * CoordUtils.calcEuclideanDistance(startLink.getCoord(), destinationLink.getCoord());
 					((OneWayContainer)this.carsharingSupplyContainer).setDistance(distance);
 				}
