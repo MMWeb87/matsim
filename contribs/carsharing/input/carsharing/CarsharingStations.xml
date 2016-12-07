@@ -7,10 +7,10 @@
 			<vehicle type="car" vehicleID="OW_2" />
 		</oneway>
 		<oneway id="1" x="-375" y="0" freeparking="2">
-			<charger chargerID="ch_1" power="3.3"/>
-			<electrovehicle type="ecar" vehicleID="OW_1" batteryCapacity="20" energyConsumption="0.015"/>
-			<electrovehicle type="ecar" vehicleID="OW_2" batteryCapacity="60" energyConsumption="0.020"/>
+			<electrovehicle type="ecar" vehicleID="OW_1" batteryCapacity="20" energyConsumption="0.015" />
+			<electrovehicle type="ecar" vehicleID="OW_2" batteryCapacity="60" energyConsumption="0.020" />
 			<vehicle type="car" vehicleID="OW_3" />
+			<charger chargerID="ch_1" power="3.3" />
 		</oneway>
 	</company>
 </companies>

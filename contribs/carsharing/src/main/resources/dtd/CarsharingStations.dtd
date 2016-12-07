@@ -20,7 +20,7 @@
           x  	       CDATA #REQUIRED
           y       CDATA #REQUIRED>
 
-<!ELEMENT oneway          (vehicle*,electrovehicle*, charger*)>
+<!ELEMENT oneway          (vehicle*,electrovehicle*,charger*)>
 <!ATTLIST oneway
           id           CDATA   #REQUIRED
           x  	       CDATA #REQUIRED
