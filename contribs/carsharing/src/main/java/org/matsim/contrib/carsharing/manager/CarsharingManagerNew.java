@@ -122,8 +122,12 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 					double distanceFactor = 1.2;
 					
 					double distance = distanceFactor * CoordUtils.calcEuclideanDistance(startLink.getCoord(), destinationLink.getCoord());
-					((OneWayContainer)this.carsharingSupplyContainer).setDistance(distance);
+					
+					//OneWayContainer test = (OneWayContainer)this.carsharingSupplyContainer; TODO: why can not cast? 
+					
+					this.carsharingSupplyContainer.setDistance(distance);
 				}
+				
 				
 				vehicle = this.carsharingSupplyContainer.findClosestAvailableVehicle(startLink,
 						carsharingType, typeOfVehicle, companyId, searchDistance);

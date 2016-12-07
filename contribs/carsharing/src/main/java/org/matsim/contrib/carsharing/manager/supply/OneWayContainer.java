@@ -27,7 +27,7 @@ public class OneWayContainer implements VehiclesContainer{
 		this.owvehiclesMap = owvehiclesMap2;
 	}
 	
-	public double distance = 0; // Added by Marc
+	public double distance; // Added by Marc
 
 	public void reserveVehicle(CSVehicle vehicle) {
 		Link link = this.owvehiclesMap.get(vehicle);
@@ -208,6 +208,7 @@ public class OneWayContainer implements VehiclesContainer{
 			}
 		}
 		
+		// TODO: if not enough free parking in search distance : nullpointer excpetion
 		return closest.getLink();
 	}
 
