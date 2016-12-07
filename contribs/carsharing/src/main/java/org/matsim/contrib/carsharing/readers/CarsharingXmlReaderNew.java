@@ -203,13 +203,13 @@ public class CarsharingXmlReaderNew extends MatsimXmlParser {
 		else if (name.equals("electrovehicle")) {
 			
 			StationBasedBEV vehicle = new StationBasedBEV(atts.getValue("type"), atts.getValue("vehicleID"), id, csType, companyName, 
-					Integer.parseInt(atts.getValue("energyConsumption")), Integer.parseInt(atts.getValue("batteryCapacity")));
+					Double.parseDouble(atts.getValue("energyConsumption")), Double.parseDouble(atts.getValue("batteryCapacity")));
 			vehicles.add(vehicle);
 			this.allVehicles.put(atts.getValue("vehicleID"), vehicle);
 			this.allVehicleLocations.put(vehicle, link);
 			
 		}
-		// Marc; new eVehicle
+		// Marc; new Charger
 		else if (name.equals("charger")) {
 			
 			Charger charger = new Charger(atts.getValue("chargerID"), Double.parseDouble(atts.getValue("power")));
@@ -310,8 +310,8 @@ public class CarsharingXmlReaderNew extends MatsimXmlParser {
 			else {
 				// Marc: implemented Station with chargers
 				OneWayCarsharingStation station;
-				
-				if(chargers.get(0)== null){
+				//if(!name.equals("charger")){
+				if(chargers.isEmpty()){
 					station = new OneWayCarsharingStation(id, link, numberOfVehiclesPerType,
 						vehiclesPerType, avaialbleParkingSpots);
 				} else {
