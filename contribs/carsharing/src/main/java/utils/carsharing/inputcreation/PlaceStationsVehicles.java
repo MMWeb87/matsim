@@ -20,7 +20,12 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 	
 	private Scenario scenario;
 	private static int counter = 0;
-	private static int counterTW = 1;
+	private static int counterOW = 1;
+	private static int lowBattCapa = 20;
+	private static int highBattCapa = 60;
+	private static double lowEnCons = 0.015;
+	private static double highEnCons = 0.02;
+	private static int freeparking = 2;
 	public PlaceStationsVehicles(Scenario scenario) {
 		
 		this.scenario = scenario;
@@ -35,34 +40,24 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 		int numberLinks = array.length;
 		Random r = new Random(456);
 		
-			
-		
 		
 		openFile(file);
 		
 		writeXmlHead();
 		List<Tuple<String, String>> attsC = new ArrayList<Tuple<String, String>>();
 		
-		attsC.add(new Tuple<>("name", "Catchacar"));
+		attsC.add(new Tuple<>("name", "BEVRule"));
 		writeStartTag("companies", null);
 		writeStartTag("company", attsC);
 		for (int i = 1; i <= 400; i++) {
 			Link link = (Link) array[r.nextInt(numberLinks)];
 
-			writeStation("twoway", link, i);
+			writeStation("oneway", link, i);
 		}
 		writeVehicles();
 
 		
 		writeEndTag("company");
-		/*List<Tuple<String, String>> attsC2 = new ArrayList<Tuple<String, String>>();
-		attsC2.add(new Tuple<>("name", "Mobility"));
-
-		writeStartTag("company", attsC2);
-
-		writeVehicles();
-		writeEndTag("company");*/
-
 		writeEndTag("companies");
 
 		
@@ -93,17 +88,20 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 		
 		List<Tuple<String, String>> attsV = new ArrayList<Tuple<String, String>>();
 		
-		attsV.add(new Tuple<>("id", "FF_" + Integer.toString(id)));
+		attsV.add(new Tuple<>("id", "OW_" + Integer.toString(id)));
 		attsV.add(new Tuple<>("x", Double.toString(link.getCoord().getX())));
 		attsV.add(new Tuple<>("y", Double.toString(link.getCoord().getY())));
+		attsV.add(new Tuple<>("freeparking", Integer.toString(freeparking))); // added by Elyas
 		
-		if (random.nextDouble() < 0.9)
+		// not correct: was related to the freefloating
+	/*	if (random.nextDouble() < 0.9)
 		
 			attsV.add(new Tuple<>("type", "car"));
 		else
 			attsV.add(new Tuple<>("type", "transporter"));
+			*/ 
 
-		writeStartTag("freefloating", attsV, true);		
+		writeStartTag("oneway", attsV, true);		
 	}
 	
 	private void writeStation(String type, Link link, int id) {
@@ -115,20 +113,41 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 		attsV.add(new Tuple<>("id", Integer.toString(id)));
 		attsV.add(new Tuple<>("x", Double.toString(link.getCoord().getX())));
 		attsV.add(new Tuple<>("y", Double.toString(link.getCoord().getY())));
+		
 
-		writeStartTag("twoway", attsV);
+		writeStartTag("oneway", attsV); // 
 		
 		int numberOfVehicles = random.nextInt(4) + 1;
 		
 		for (int i = 1; i <= numberOfVehicles; i++) {
 			
+			
 			List<Tuple<String, String>> atts = new ArrayList<Tuple<String, String>>();
 			
-			atts.add(new Tuple<>("id", "TW_" + Integer.toString(counterTW++)));
+			atts.add(new Tuple<>("id", "OW_" + Integer.toString(counterOW++)));
 			atts.add(new Tuple<>("type", "car"));
 			writeStartTag("vehicle", atts, true);
+			
+			//added by Elyas
+			List<Tuple<String, String>> attse = new ArrayList<Tuple<String, String>>();
+	
+			atts.add(new Tuple<>("energyConsumption", Double.toString(lowEnCons)));
+			atts.add(new Tuple<>("batteryCapacity", Integer.toString(lowBattCapa)));
+			atts.add(new Tuple<>("id", "OW_" + Integer.toString(counterOW++)));
+			atts.add(new Tuple<>("type", "ecar"));
+			
+			if (random.nextDouble() < 0.5){
+			attse.add(new Tuple<>("batteryCapacity", Double.toString(highBattCapa)));
+			attse.add(new Tuple<>("energyConsumption", Double.toString(highEnCons)));
+			}else{
+			attse.add(new Tuple<>("batteryCapacity", Double.toString(lowBattCapa)));
+			attse.add(new Tuple<>("energyConsumption", Double.toString(lowEnCons)));
+			}
+	
+			writeStartTag("electrovehicle",attse,true);
+			// end of Elyas
 		}
-		writeEndTag("twoway");
+		writeEndTag("oneway"); 
 
 	}
 
