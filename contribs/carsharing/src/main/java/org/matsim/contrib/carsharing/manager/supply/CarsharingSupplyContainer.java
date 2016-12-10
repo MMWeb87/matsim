@@ -24,6 +24,9 @@ public class CarsharingSupplyContainer implements CarsharingSupplyInterface {
 	private Set<String> companyNames;
 	private Scenario scenario;
 	
+	// TODO:implement better 
+	public double distance;
+	
 	public CarsharingSupplyContainer(Scenario scenario) {
 		this.scenario = scenario;
 	}	
@@ -121,5 +124,12 @@ public class CarsharingSupplyContainer implements CarsharingSupplyInterface {
 	@Override
 	public Set<String> getCompanyNames() {
 		return companyNames;
+	}
+
+	/**
+	 * @param distance the distance to set
+	 */
+	public void setDistance(double distance) {
+		this.distance = distance;
 	}	
 }

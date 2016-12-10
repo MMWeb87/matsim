@@ -25,5 +25,7 @@ public interface CarsharingSupplyInterface {
 	void populateSupply();
 
 	Set<String> getCompanyNames();
+	
+	public void setDistance(double distance);
 
 }
