@@ -21,6 +21,7 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 	private Scenario scenario;
 	private static int counter = 0;
 	private static int counterOW = 1;
+	private static int counterch = 1;
 	private static int lowBattCapa = 20;
 	private static int highBattCapa = 60;
 	private static double lowEnCons = 0.015;
@@ -145,6 +146,12 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 			}
 	
 			writeStartTag("electrovehicle",attse,true);
+			
+			List<Tuple<String, String>> attsc = new ArrayList<Tuple<String, String>>();
+			attsc.add(new Tuple<>("id", "ch_"+ Integer.toString(counterch++)));
+			attsc.add(new Tuple<>("power", Double.toString(3.3)));
+			
+			writeStartTag("charger",attsc);
 			// end of Elyas
 		}
 		writeEndTag("oneway"); 
