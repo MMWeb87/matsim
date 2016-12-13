@@ -21,7 +21,7 @@
 		<param name="endTime" value="30:00:00" />
 		<param name="flowCapacityFactor" value="0.7" />
 		<param name="storageCapacityFactor" value="1.00" /> 
-		<param name="numberOfThreads" value="4" />
+		<param name="numberOfThreads" value="1" />
 		<param name = "snapshotperiod"	value = "00:00:10"/>
 
 		<!-- Boolean. `true': stuck vehicles are removed, aborting the plan; `false': stuck vehicles are forced into the next link. `false' is probably the better choice. -->
@@ -45,13 +45,12 @@
 
     <module name="Carsharing" >
 		<param name="statsWriterFrequency" value="1" />
-			<param name="vehiclelocations" value="carsharing/CarsharingStations.xml" />
-			<param name="membership" value="carsharing/CSMembership.xml" />
+			<param name="vehiclelocations" value="/Users/marc/git/matsim/contribs/carsharing/input/carsharing/CarSharingStationsSioux.xml" />
+			<param name="membership" value="/Users/marc/git/matsim/contribs/carsharing/input/carsharing/CSMembershipSioux.xml" />
 	</module>
 
 	<module name="OneWayCarsharing" >
 	    <param name="timeParkingFeeOneWayCarsharing" value="-0.005" />
-		<param name="vehiclelocationsOneWayCarsharing" value="carsharing/CarsharingStations.xml" />
 		<param name="travelingOneWayCarsharing" value="-10.0" />
 		<param name="constantOneWayCarsharing" value="-0.4" />
         <param name="timeFeeOneWayCarsharing" value="-0.0" />
@@ -215,8 +214,8 @@
 
   	<module name="transit">
   	  	<param name="useTransit" value="true" />
-  	  		<param name="transitScheduleFile" value="schedule.xml" />
- 		<param name="vehiclesFile" value="vehicles.xml" />
+  	  		<param name="transitScheduleFile" value="scenario/schedule.xml" />
+ 		<param name="vehiclesFile" value="scenario/vehicles.xml" />
   	 	<param name="transitModes" value="pt,bus" />
   	</module>
 
