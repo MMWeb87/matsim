@@ -10,7 +10,7 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 	
 	
 	private double chargingLevel; //kWh
-	private double energyConsumption; // kWh/km
+	private double energyConsumption; // kWh/m
 	private double batteryCapacity; //kWh 
 	private boolean fullyCharged;
 	private Charger attachedCharger = null;
@@ -96,11 +96,10 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 	}
 	
 	/**
-	 * @param distance Distance in km's
+	 * @param distance Distance in meters
 	 */
 	public void driveAndUncharge(double distance){
 		
-		// TODO: find out if meters of km.
 		uncharge(energyConsumption * distance);
 		
 	}

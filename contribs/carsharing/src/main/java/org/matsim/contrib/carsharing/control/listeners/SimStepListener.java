@@ -24,7 +24,9 @@ public class SimStepListener implements MobsimAfterSimStepListener {
 		HashSet<StationBasedBEV> vehicles = ChargingVehicles.getChargingVehicles();
 		
 		for(StationBasedBEV vehicle: vehicles){
-			vehicle.getAttachedCharger().chargeVehicle(vehicle);
+			if(vehicle.getAttachedCharger() != null){
+				vehicle.getAttachedCharger().chargeVehicle(vehicle);
+			}
 		}
 
 		

@@ -8,7 +8,7 @@ public interface BEVehicle{
 	public void setChargingLevel(double chargingLevel); //kWh
 
 	public double getBatteryCapacity(); // kWh
-	public double getEnergyConsumption(); // kWh/km
+	public double getEnergyConsumption(); // kWh/m
 	
 	public boolean isFullyCharged();
 	public void charge(double charge);

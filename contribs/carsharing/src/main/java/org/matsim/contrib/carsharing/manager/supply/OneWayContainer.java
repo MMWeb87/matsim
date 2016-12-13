@@ -209,7 +209,12 @@ public class OneWayContainer implements VehiclesContainer{
 		}
 		
 		// TODO: if not enough free parking in search distance : nullpointer excpetion
-		return closest.getLink();
+		if(closest!=null){
+			return closest.getLink();
+		}
+		else {
+			return null;
+		}
 	}
 
 	@Override
