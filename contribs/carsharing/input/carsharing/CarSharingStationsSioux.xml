@@ -1,0 +1,2346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE companies SYSTEM "src/main/resources/dtd/CarsharingStations.dtd">
+
+<companies>
+	<company name="BEVRule">
+		<oneway id="1" x="683359.4337865" y="4819794.591628" freeparking="2">
+			<vehicle vehicleID="OW_2" type="car"/>
+			<electrovehicle vehicleID="OW_1" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_1" power="3.3"/>
+		</oneway>
+		<oneway id="2" x="685221.3193109999" y="4828207.3476735" freeparking="2">
+			<electrovehicle vehicleID="OW_3" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_4" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_5" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_2" power="3.3"/>
+		</oneway>
+		<oneway id="3" x="681839.6879730001" y="4824049.9659589995" freeparking="2">
+			<electrovehicle vehicleID="OW_6" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_3" power="3.3"/>
+		</oneway>
+		<oneway id="4" x="679680.7446615" y="4829943.043323" freeparking="2">
+			<vehicle vehicleID="OW_8" type="car"/>
+			<electrovehicle vehicleID="OW_7" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_9" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_4" power="3.3"/>
+			<charger chargerID="ch_5" power="3.3"/>
+		</oneway>
+		<oneway id="5" x="686403.7829915" y="4829248.353075501" freeparking="2">
+			<electrovehicle vehicleID="OW_10" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_6" power="3.3"/>
+		</oneway>
+		<oneway id="6" x="679309.699419" y="4825078.453883" freeparking="2">
+			<electrovehicle vehicleID="OW_11" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_7" power="3.3"/>
+		</oneway>
+		<oneway id="7" x="685873.1311325" y="4824601.369757" freeparking="2">
+			<electrovehicle vehicleID="OW_12" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_13" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="8" x="686356.653513" y="4826101.0335145" freeparking="2">
+			<electrovehicle vehicleID="OW_14" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_15" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_16" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_8" power="3.3"/>
+			<charger chargerID="ch_9" power="3.3"/>
+		</oneway>
+		<oneway id="9" x="683624.67729" y="4821306.3907555" freeparking="2">
+			<electrovehicle vehicleID="OW_17" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_10" power="3.3"/>
+		</oneway>
+		<oneway id="10" x="680089.8735265001" y="4823643.262651" freeparking="2">
+			<electrovehicle vehicleID="OW_18" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_11" power="3.3"/>
+		</oneway>
+		<oneway id="11" x="684141.8237835" y="4823069.893956" freeparking="2">
+			<electrovehicle vehicleID="OW_19" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="12" x="682220.0569765" y="4825836.572011501" freeparking="2">
+			<electrovehicle vehicleID="OW_20" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_12" power="3.3"/>
+		</oneway>
+		<oneway id="13" x="686495.2219165" y="4831182.2535635" freeparking="2">
+			<electrovehicle vehicleID="OW_21" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_22" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="14" x="686291.6487700001" y="4824787.3820695" freeparking="2">
+			<electrovehicle vehicleID="OW_23" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="15" x="682602.007788" y="4824219.419888999" freeparking="2">
+			<vehicle vehicleID="OW_24" type="car"/>
+			<electrovehicle vehicleID="OW_25" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_13" power="3.3"/>
+			<charger chargerID="ch_14" power="3.3"/>
+		</oneway>
+		<oneway id="16" x="687378.265853" y="4823841.153679499" freeparking="2">
+			<electrovehicle vehicleID="OW_26" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="17" x="684934.3939660001" y="4830641.03748" freeparking="2">
+			<electrovehicle vehicleID="OW_27" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="18" x="683920.0892155" y="4826545.809954" freeparking="2">
+			<vehicle vehicleID="OW_28" type="car"/>
+			<vehicle vehicleID="OW_29" type="car"/>
+			<charger chargerID="ch_15" power="3.3"/>
+		</oneway>
+		<oneway id="19" x="678835.1353245" y="4824596.3011920005" freeparking="2">
+			<electrovehicle vehicleID="OW_30" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_16" power="3.3"/>
+		</oneway>
+		<oneway id="20" x="684359.949175" y="4821326.1025165" freeparking="2">
+			<vehicle vehicleID="OW_32" type="car"/>
+			<electrovehicle vehicleID="OW_31" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_17" power="3.3"/>
+		</oneway>
+		<oneway id="21" x="685479.7828009999" y="4824288.4007045" freeparking="2">
+			<vehicle vehicleID="OW_33" type="car"/>
+			<vehicle vehicleID="OW_34" type="car"/>
+		</oneway>
+		<oneway id="22" x="681177.9736075001" y="4819702.496537" freeparking="2">
+			<vehicle vehicleID="OW_36" type="car"/>
+			<electrovehicle vehicleID="OW_35" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_18" power="3.3"/>
+		</oneway>
+		<oneway id="23" x="682346.9121485" y="4822888.6040575" freeparking="2">
+			<vehicle vehicleID="OW_37" type="car"/>
+		</oneway>
+		<oneway id="24" x="683990.526463" y="4829723.162495" freeparking="2">
+			<electrovehicle vehicleID="OW_38" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_39" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_19" power="3.3"/>
+			<charger chargerID="ch_20" power="3.3"/>
+		</oneway>
+		<oneway id="25" x="684972.7972145" y="4820654.9136270005" freeparking="2">
+			<vehicle vehicleID="OW_40" type="car"/>
+			<electrovehicle vehicleID="OW_41" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_21" power="3.3"/>
+		</oneway>
+		<oneway id="26" x="681735.676792" y="4821457.9470335" freeparking="2">
+			<electrovehicle vehicleID="OW_42" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_43" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_22" power="3.3"/>
+		</oneway>
+		<oneway id="27" x="685693.6239125" y="4831837.417110501" freeparking="2">
+			<vehicle vehicleID="OW_45" type="car"/>
+			<electrovehicle vehicleID="OW_44" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="28" x="681839.6879730001" y="4824049.9659589995" freeparking="2">
+			<electrovehicle vehicleID="OW_46" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="29" x="678255.2134509999" y="4830789.074356" freeparking="2">
+			<electrovehicle vehicleID="OW_47" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="30" x="686291.2123964999" y="4826068.6500045005" freeparking="2">
+			<vehicle vehicleID="OW_48" type="car"/>
+			<vehicle vehicleID="OW_49" type="car"/>
+			<charger chargerID="ch_23" power="3.3"/>
+		</oneway>
+		<oneway id="31" x="681697.0045624999" y="4822672.175855" freeparking="2">
+			<vehicle vehicleID="OW_51" type="car"/>
+			<electrovehicle vehicleID="OW_50" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_52" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="32" x="687284.7594234999" y="4831036.002446501" freeparking="2">
+			<electrovehicle vehicleID="OW_53" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="33" x="679347.4956934999" y="4825493.809623" freeparking="2">
+			<vehicle vehicleID="OW_54" type="car"/>
+			<electrovehicle vehicleID="OW_55" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_56" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_24" power="3.3"/>
+			<charger chargerID="ch_25" power="3.3"/>
+		</oneway>
+		<oneway id="34" x="681749.440703" y="4821054.626659" freeparking="2">
+			<electrovehicle vehicleID="OW_57" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="35" x="680891.4223994999" y="4822646.0780015" freeparking="2">
+			<vehicle vehicleID="OW_59" type="car"/>
+			<electrovehicle vehicleID="OW_58" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_26" power="3.3"/>
+		</oneway>
+		<oneway id="36" x="678900.6308805" y="4821828.5545435" freeparking="2">
+			<electrovehicle vehicleID="OW_60" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_27" power="3.3"/>
+		</oneway>
+		<oneway id="37" x="682928.5367335" y="4822905.7782445" freeparking="2">
+			<vehicle vehicleID="OW_63" type="car"/>
+			<electrovehicle vehicleID="OW_61" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_62" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_28" power="3.3"/>
+		</oneway>
+		<oneway id="38" x="680816.2336319999" y="4825410.8817035" freeparking="2">
+			<electrovehicle vehicleID="OW_64" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_65" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_29" power="3.3"/>
+		</oneway>
+		<oneway id="39" x="680868.588048" y="4819630.5456315" freeparking="2">
+			<electrovehicle vehicleID="OW_66" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_30" power="3.3"/>
+		</oneway>
+		<oneway id="40" x="679333.1836155" y="4822104.1310535" freeparking="2">
+			<electrovehicle vehicleID="OW_67" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_31" power="3.3"/>
+		</oneway>
+		<oneway id="41" x="679366.137994" y="4823788.761877" freeparking="2">
+			<vehicle vehicleID="OW_68" type="car"/>
+			<vehicle vehicleID="OW_70" type="car"/>
+			<electrovehicle vehicleID="OW_69" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_32" power="3.3"/>
+		</oneway>
+		<oneway id="42" x="682319.314005" y="4823696.2622115" freeparking="2">
+			<electrovehicle vehicleID="OW_71" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_33" power="3.3"/>
+		</oneway>
+		<oneway id="43" x="686545.4602435001" y="4822389.065171" freeparking="2">
+			<vehicle vehicleID="OW_72" type="car"/>
+			<vehicle vehicleID="OW_73" type="car"/>
+		</oneway>
+		<oneway id="44" x="686251.906676" y="4827774.2881805" freeparking="2">
+			<electrovehicle vehicleID="OW_74" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_75" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_76" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_34" power="3.3"/>
+		</oneway>
+		<oneway id="45" x="679811.8327945" y="4820119.478002001" freeparking="2">
+			<vehicle vehicleID="OW_77" type="car"/>
+		</oneway>
+		<oneway id="46" x="682929.0835765" y="4821896.738547999" freeparking="2">
+			<vehicle vehicleID="OW_79" type="car"/>
+			<electrovehicle vehicleID="OW_78" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_35" power="3.3"/>
+			<charger chargerID="ch_36" power="3.3"/>
+		</oneway>
+		<oneway id="47" x="684972.7972145" y="4820654.9136270005" freeparking="2">
+			<vehicle vehicleID="OW_81" type="car"/>
+			<electrovehicle vehicleID="OW_80" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="48" x="685796.0983215" y="4822163.9536605" freeparking="2">
+			<vehicle vehicleID="OW_82" type="car"/>
+			<vehicle vehicleID="OW_83" type="car"/>
+			<electrovehicle vehicleID="OW_84" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_37" power="3.3"/>
+		</oneway>
+		<oneway id="49" x="686226.1775415" y="4824138.149356499" freeparking="2">
+			<vehicle vehicleID="OW_86" type="car"/>
+			<vehicle vehicleID="OW_87" type="car"/>
+			<electrovehicle vehicleID="OW_85" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="50" x="678543.34082" y="4820569.7515215" freeparking="2">
+			<vehicle vehicleID="OW_89" type="car"/>
+			<electrovehicle vehicleID="OW_88" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_38" power="3.3"/>
+		</oneway>
+		<oneway id="51" x="680191.4324380001" y="4818855.2159979995" freeparking="2">
+			<vehicle vehicleID="OW_90" type="car"/>
+			<charger chargerID="ch_39" power="3.3"/>
+		</oneway>
+		<oneway id="52" x="685693.6239125" y="4831837.417110501" freeparking="2">
+			<electrovehicle vehicleID="OW_91" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="53" x="679296.4212110001" y="4823606.7993025" freeparking="2">
+			<vehicle vehicleID="OW_92" type="car"/>
+			<electrovehicle vehicleID="OW_93" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_40" power="3.3"/>
+		</oneway>
+		<oneway id="54" x="679941.9391145001" y="4827332.4146585" freeparking="2">
+			<vehicle vehicleID="OW_95" type="car"/>
+			<electrovehicle vehicleID="OW_94" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="55" x="682752.7492915001" y="4830762.4695025" freeparking="2">
+			<vehicle vehicleID="OW_97" type="car"/>
+			<electrovehicle vehicleID="OW_96" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_98" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_41" power="3.3"/>
+			<charger chargerID="ch_42" power="3.3"/>
+		</oneway>
+		<oneway id="56" x="683610.9165930001" y="4824903.5326165" freeparking="2">
+			<vehicle vehicleID="OW_101" type="car"/>
+			<electrovehicle vehicleID="OW_99" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_100" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_43" power="3.3"/>
+		</oneway>
+		<oneway id="57" x="681697.0045624999" y="4822672.175855" freeparking="2">
+			<electrovehicle vehicleID="OW_102" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="58" x="686292.868005" y="4831378.065382" freeparking="2">
+			<electrovehicle vehicleID="OW_103" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_104" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="59" x="682804.6332425" y="4824007.6321" freeparking="2">
+			<vehicle vehicleID="OW_105" type="car"/>
+			<vehicle vehicleID="OW_106" type="car"/>
+			<electrovehicle vehicleID="OW_107" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_44" power="3.3"/>
+		</oneway>
+		<oneway id="60" x="679112.5960850001" y="4826829.0189755" freeparking="2">
+			<electrovehicle vehicleID="OW_108" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_109" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_110" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_45" power="3.3"/>
+			<charger chargerID="ch_46" power="3.3"/>
+			<charger chargerID="ch_47" power="3.3"/>
+		</oneway>
+		<oneway id="61" x="679802.1875354999" y="4823628.351701001" freeparking="2">
+			<electrovehicle vehicleID="OW_111" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_48" power="3.3"/>
+		</oneway>
+		<oneway id="62" x="681655.105611" y="4824234.405387" freeparking="2">
+			<vehicle vehicleID="OW_114" type="car"/>
+			<electrovehicle vehicleID="OW_112" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_113" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_49" power="3.3"/>
+		</oneway>
+		<oneway id="63" x="684529.2598135" y="4822436.6289115" freeparking="2">
+			<vehicle vehicleID="OW_115" type="car"/>
+			<electrovehicle vehicleID="OW_116" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="64" x="684805.4313795" y="4820349.6976665" freeparking="2">
+			<electrovehicle vehicleID="OW_117" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_118" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_50" power="3.3"/>
+		</oneway>
+		<oneway id="65" x="680306.0516995001" y="4829874.0579095" freeparking="2">
+			<vehicle vehicleID="OW_119" type="car"/>
+			<electrovehicle vehicleID="OW_120" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_51" power="3.3"/>
+			<charger chargerID="ch_52" power="3.3"/>
+		</oneway>
+		<oneway id="66" x="678634.4377125" y="4819578.9705915" freeparking="2">
+			<vehicle vehicleID="OW_121" type="car"/>
+			<charger chargerID="ch_53" power="3.3"/>
+		</oneway>
+		<oneway id="67" x="679747.7117725001" y="4824653.3654295" freeparking="2">
+			<electrovehicle vehicleID="OW_122" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="68" x="683430.4844255" y="4823675.055454" freeparking="2">
+			<electrovehicle vehicleID="OW_123" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_124" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_125" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_54" power="3.3"/>
+		</oneway>
+		<oneway id="69" x="683209.9459795" y="4820894.5480725" freeparking="2">
+			<electrovehicle vehicleID="OW_126" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_127" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="70" x="685497.958476" y="4821504.030598501" freeparking="2">
+			<electrovehicle vehicleID="OW_128" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_129" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="71" x="679661.6595429999" y="4826817.937314" freeparking="2">
+			<electrovehicle vehicleID="OW_130" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_131" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_55" power="3.3"/>
+		</oneway>
+		<oneway id="72" x="681844.7009435" y="4823906.0523955" freeparking="2">
+			<electrovehicle vehicleID="OW_132" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_133" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="73" x="682663.7429365" y="4826368.165734" freeparking="2">
+			<vehicle vehicleID="OW_135" type="car"/>
+			<electrovehicle vehicleID="OW_134" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_56" power="3.3"/>
+		</oneway>
+		<oneway id="74" x="679311.987313" y="4823395.2358075" freeparking="2">
+			<vehicle vehicleID="OW_137" type="car"/>
+			<electrovehicle vehicleID="OW_136" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_57" power="3.3"/>
+		</oneway>
+		<oneway id="75" x="683362.8625650001" y="4828488.91328" freeparking="2">
+			<electrovehicle vehicleID="OW_138" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="76" x="685320.396286" y="4830637.4975475" freeparking="2">
+			<vehicle vehicleID="OW_139" type="car"/>
+			<electrovehicle vehicleID="OW_140" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_141" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_58" power="3.3"/>
+			<charger chargerID="ch_59" power="3.3"/>
+		</oneway>
+		<oneway id="77" x="684051.4721995" y="4825469.0324665" freeparking="2">
+			<electrovehicle vehicleID="OW_142" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_60" power="3.3"/>
+		</oneway>
+		<oneway id="78" x="679670.5182205001" y="4830053.940986" freeparking="2">
+			<vehicle vehicleID="OW_144" type="car"/>
+			<electrovehicle vehicleID="OW_143" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_61" power="3.3"/>
+		</oneway>
+		<oneway id="79" x="685366.5750365" y="4828412.7389084995" freeparking="2">
+			<vehicle vehicleID="OW_146" type="car"/>
+			<electrovehicle vehicleID="OW_145" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_62" power="3.3"/>
+		</oneway>
+		<oneway id="80" x="684700.7147240001" y="4830810.477062" freeparking="2">
+			<vehicle vehicleID="OW_147" type="car"/>
+			<vehicle vehicleID="OW_148" type="car"/>
+		</oneway>
+		<oneway id="81" x="684141.8237835" y="4823069.893956" freeparking="2">
+			<electrovehicle vehicleID="OW_149" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="82" x="679381.8182385" y="4821501.666431" freeparking="2">
+			<electrovehicle vehicleID="OW_150" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_151" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_63" power="3.3"/>
+			<charger chargerID="ch_64" power="3.3"/>
+		</oneway>
+		<oneway id="83" x="683121.627962" y="4820487.709388999" freeparking="2">
+			<electrovehicle vehicleID="OW_152" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="84" x="679953.527077" y="4828468.232349" freeparking="2">
+			<vehicle vehicleID="OW_153" type="car"/>
+			<electrovehicle vehicleID="OW_154" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="85" x="682593.444226" y="4826418.213065" freeparking="2">
+			<electrovehicle vehicleID="OW_155" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_156" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_65" power="3.3"/>
+		</oneway>
+		<oneway id="86" x="682917.979603" y="4822300.736326" freeparking="2">
+			<electrovehicle vehicleID="OW_157" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_66" power="3.3"/>
+		</oneway>
+		<oneway id="87" x="683209.9459795" y="4820894.5480725" freeparking="2">
+			<vehicle vehicleID="OW_158" type="car"/>
+			<charger chargerID="ch_67" power="3.3"/>
+		</oneway>
+		<oneway id="88" x="682647.0487285" y="4831560.8352675" freeparking="2">
+			<electrovehicle vehicleID="OW_159" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_160" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_68" power="3.3"/>
+			<charger chargerID="ch_69" power="3.3"/>
+		</oneway>
+		<oneway id="89" x="684700.7147240001" y="4830810.477062" freeparking="2">
+			<electrovehicle vehicleID="OW_161" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="90" x="683558.4982235001" y="4824539.033242" freeparking="2">
+			<vehicle vehicleID="OW_163" type="car"/>
+			<electrovehicle vehicleID="OW_162" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_70" power="3.3"/>
+			<charger chargerID="ch_71" power="3.3"/>
+		</oneway>
+		<oneway id="91" x="682594.2227205" y="4824510.354271499" freeparking="2">
+			<vehicle vehicleID="OW_166" type="car"/>
+			<electrovehicle vehicleID="OW_164" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_165" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_72" power="3.3"/>
+		</oneway>
+		<oneway id="92" x="679502.344184" y="4818771.2380505" freeparking="2">
+			<vehicle vehicleID="OW_167" type="car"/>
+			<electrovehicle vehicleID="OW_168" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_73" power="3.3"/>
+		</oneway>
+		<oneway id="93" x="680042.8287559999" y="4821184.682172" freeparking="2">
+			<electrovehicle vehicleID="OW_169" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_170" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="94" x="679934.7927999999" y="4828471.3695615" freeparking="2">
+			<electrovehicle vehicleID="OW_171" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="95" x="683759.0551199999" y="4821109.893895" freeparking="2">
+			<electrovehicle vehicleID="OW_172" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_173" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_174" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_74" power="3.3"/>
+			<charger chargerID="ch_75" power="3.3"/>
+		</oneway>
+		<oneway id="96" x="679182.3935245001" y="4819568.760056" freeparking="2">
+			<vehicle vehicleID="OW_175" type="car"/>
+			<vehicle vehicleID="OW_177" type="car"/>
+			<electrovehicle vehicleID="OW_176" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="97" x="686596.5512890001" y="4824126.964036" freeparking="2">
+			<vehicle vehicleID="OW_178" type="car"/>
+			<charger chargerID="ch_76" power="3.3"/>
+		</oneway>
+		<oneway id="98" x="678881.6866275" y="4830040.812263" freeparking="2">
+			<electrovehicle vehicleID="OW_179" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_180" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_181" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_77" power="3.3"/>
+		</oneway>
+		<oneway id="99" x="679341.320476" y="4827922.334923999" freeparking="2">
+			<vehicle vehicleID="OW_182" type="car"/>
+		</oneway>
+		<oneway id="100" x="681945.269681" y="4825893.165422499" freeparking="2">
+			<vehicle vehicleID="OW_185" type="car"/>
+			<electrovehicle vehicleID="OW_183" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_184" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_78" power="3.3"/>
+		</oneway>
+		<oneway id="101" x="682585.4003544999" y="4826096.059703" freeparking="2">
+			<electrovehicle vehicleID="OW_186" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="102" x="682144.200648" y="4819205.296568" freeparking="2">
+			<vehicle vehicleID="OW_187" type="car"/>
+			<electrovehicle vehicleID="OW_188" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_189" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_79" power="3.3"/>
+		</oneway>
+		<oneway id="103" x="681725.5645795" y="4826307.474994" freeparking="2">
+			<vehicle vehicleID="OW_190" type="car"/>
+		</oneway>
+		<oneway id="104" x="685434.890081" y="4824084.563279999" freeparking="2">
+			<vehicle vehicleID="OW_191" type="car"/>
+			<vehicle vehicleID="OW_192" type="car"/>
+			<vehicle vehicleID="OW_193" type="car"/>
+			<charger chargerID="ch_80" power="3.3"/>
+		</oneway>
+		<oneway id="105" x="684423.2933855001" y="4825772.778364" freeparking="2">
+			<electrovehicle vehicleID="OW_194" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_195" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_196" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_81" power="3.3"/>
+		</oneway>
+		<oneway id="106" x="680449.567237" y="4826868.3147165" freeparking="2">
+			<electrovehicle vehicleID="OW_197" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="107" x="686081.7940135" y="4818930.4794215" freeparking="2">
+			<vehicle vehicleID="OW_198" type="car"/>
+		</oneway>
+		<oneway id="108" x="680146.37153" y="4828465.7751565" freeparking="2">
+			<vehicle vehicleID="OW_199" type="car"/>
+			<vehicle vehicleID="OW_200" type="car"/>
+			<charger chargerID="ch_82" power="3.3"/>
+		</oneway>
+		<oneway id="109" x="684513.215267" y="4822997.036751499" freeparking="2">
+			<electrovehicle vehicleID="OW_201" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="110" x="682580.217522" y="4821849.2299935" freeparking="2">
+			<vehicle vehicleID="OW_203" type="car"/>
+			<electrovehicle vehicleID="OW_202" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_83" power="3.3"/>
+		</oneway>
+		<oneway id="111" x="681946.389489" y="4825503.798161" freeparking="2">
+			<vehicle vehicleID="OW_204" type="car"/>
+			<electrovehicle vehicleID="OW_205" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_206" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_84" power="3.3"/>
+		</oneway>
+		<oneway id="112" x="682551.6954225" y="4821090.367959" freeparking="2">
+			<vehicle vehicleID="OW_209" type="car"/>
+			<electrovehicle vehicleID="OW_207" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_208" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="113" x="686181.597873" y="4823802.3995545" freeparking="2">
+			<vehicle vehicleID="OW_211" type="car"/>
+			<vehicle vehicleID="OW_212" type="car"/>
+			<electrovehicle vehicleID="OW_210" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_85" power="3.3"/>
+			<charger chargerID="ch_86" power="3.3"/>
+		</oneway>
+		<oneway id="114" x="682066.1810285" y="4825950.5781875" freeparking="2">
+			<vehicle vehicleID="OW_214" type="car"/>
+			<electrovehicle vehicleID="OW_213" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_87" power="3.3"/>
+			<charger chargerID="ch_88" power="3.3"/>
+		</oneway>
+		<oneway id="115" x="679334.8167395" y="4828444.6684535" freeparking="2">
+			<electrovehicle vehicleID="OW_215" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_216" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_217" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_89" power="3.3"/>
+		</oneway>
+		<oneway id="116" x="683333.9684204999" y="4830764.150152501" freeparking="2">
+			<electrovehicle vehicleID="OW_218" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="117" x="681870.8138815" y="4826366.366044501" freeparking="2">
+			<vehicle vehicleID="OW_219" type="car"/>
+			<vehicle vehicleID="OW_220" type="car"/>
+			<electrovehicle vehicleID="OW_221" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_90" power="3.3"/>
+		</oneway>
+		<oneway id="118" x="683657.543085" y="4825313.283737" freeparking="2">
+			<vehicle vehicleID="OW_222" type="car"/>
+			<vehicle vehicleID="OW_223" type="car"/>
+		</oneway>
+		<oneway id="119" x="685577.1597465" y="4821610.32748" freeparking="2">
+			<electrovehicle vehicleID="OW_224" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="120" x="679660.329045" y="4828465.817283" freeparking="2">
+			<vehicle vehicleID="OW_227" type="car"/>
+			<electrovehicle vehicleID="OW_225" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_226" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_91" power="3.3"/>
+		</oneway>
+		<oneway id="121" x="683950.1490249999" y="4828682.7185975" freeparking="2">
+			<electrovehicle vehicleID="OW_228" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="122" x="682472.7513870001" y="4825936.8300205" freeparking="2">
+			<electrovehicle vehicleID="OW_229" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="123" x="685166.0241235001" y="4830353.8082139995" freeparking="2">
+			<vehicle vehicleID="OW_230" type="car"/>
+			<vehicle vehicleID="OW_231" type="car"/>
+			<vehicle vehicleID="OW_232" type="car"/>
+			<charger chargerID="ch_92" power="3.3"/>
+			<charger chargerID="ch_93" power="3.3"/>
+		</oneway>
+		<oneway id="124" x="682710.4204835" y="4822496.4257255" freeparking="2">
+			<electrovehicle vehicleID="OW_233" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_234" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_235" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_94" power="3.3"/>
+			<charger chargerID="ch_95" power="3.3"/>
+		</oneway>
+		<oneway id="125" x="678675.8703095" y="4829978.7468865" freeparking="2">
+			<vehicle vehicleID="OW_236" type="car"/>
+			<charger chargerID="ch_96" power="3.3"/>
+		</oneway>
+		<oneway id="126" x="678330.286556" y="4828197.999778001" freeparking="2">
+			<vehicle vehicleID="OW_237" type="car"/>
+			<electrovehicle vehicleID="OW_238" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_97" power="3.3"/>
+		</oneway>
+		<oneway id="127" x="678715.653074" y="4823584.36292" freeparking="2">
+			<vehicle vehicleID="OW_241" type="car"/>
+			<electrovehicle vehicleID="OW_239" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_240" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_98" power="3.3"/>
+		</oneway>
+		<oneway id="128" x="684741.229139" y="4822142.565486" freeparking="2">
+			<vehicle vehicleID="OW_242" type="car"/>
+		</oneway>
+		<oneway id="129" x="684255.6450004999" y="4823470.4559335" freeparking="2">
+			<vehicle vehicleID="OW_244" type="car"/>
+			<electrovehicle vehicleID="OW_243" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_245" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_99" power="3.3"/>
+		</oneway>
+		<oneway id="130" x="684448.3072259999" y="4830587.647786" freeparking="2">
+			<vehicle vehicleID="OW_246" type="car"/>
+			<vehicle vehicleID="OW_247" type="car"/>
+			<charger chargerID="ch_100" power="3.3"/>
+		</oneway>
+		<oneway id="131" x="684834.8398124999" y="4825580.8678035" freeparking="2">
+			<vehicle vehicleID="OW_249" type="car"/>
+			<electrovehicle vehicleID="OW_248" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_101" power="3.3"/>
+			<charger chargerID="ch_102" power="3.3"/>
+		</oneway>
+		<oneway id="132" x="679524.224966" y="4827834.5987825" freeparking="2">
+			<electrovehicle vehicleID="OW_250" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="133" x="685135.005721" y="4829609.701836" freeparking="2">
+			<electrovehicle vehicleID="OW_251" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_252" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_253" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_103" power="3.3"/>
+		</oneway>
+		<oneway id="134" x="682023.110689" y="4819604.8832605" freeparking="2">
+			<vehicle vehicleID="OW_256" type="car"/>
+			<electrovehicle vehicleID="OW_254" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_255" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="135" x="678900.6308805" y="4821828.5545435" freeparking="2">
+			<electrovehicle vehicleID="OW_257" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="136" x="682663.7429365" y="4826368.165734" freeparking="2">
+			<vehicle vehicleID="OW_258" type="car"/>
+			<electrovehicle vehicleID="OW_259" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_260" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_104" power="3.3"/>
+		</oneway>
+		<oneway id="137" x="680172.9494915" y="4830080.406705501" freeparking="2">
+			<vehicle vehicleID="OW_261" type="car"/>
+			<electrovehicle vehicleID="OW_262" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_263" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="138" x="678330.286556" y="4828197.999778001" freeparking="2">
+			<vehicle vehicleID="OW_264" type="car"/>
+			<electrovehicle vehicleID="OW_265" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_266" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_105" power="3.3"/>
+		</oneway>
+		<oneway id="139" x="679132.783187" y="4829824.950724" freeparking="2">
+			<vehicle vehicleID="OW_267" type="car"/>
+		</oneway>
+		<oneway id="140" x="683379.4680335" y="4828261.4767035" freeparking="2">
+			<electrovehicle vehicleID="OW_268" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_269" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="141" x="679339.7741205" y="4821893.487085" freeparking="2">
+			<electrovehicle vehicleID="OW_270" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="142" x="680599.7492335" y="4819408.7224395" freeparking="2">
+			<vehicle vehicleID="OW_271" type="car"/>
+		</oneway>
+		<oneway id="143" x="681351.6442725" y="4825060.535589" freeparking="2">
+			<electrovehicle vehicleID="OW_272" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_273" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="144" x="678479.0339635" y="4823016.908966" freeparking="2">
+			<electrovehicle vehicleID="OW_274" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_275" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_106" power="3.3"/>
+		</oneway>
+		<oneway id="145" x="686081.7940135" y="4818930.4794215" freeparking="2">
+			<vehicle vehicleID="OW_276" type="car"/>
+			<electrovehicle vehicleID="OW_277" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_107" power="3.3"/>
+			<charger chargerID="ch_108" power="3.3"/>
+		</oneway>
+		<oneway id="146" x="686071.3757135" y="4828610.3384105" freeparking="2">
+			<vehicle vehicleID="OW_278" type="car"/>
+			<vehicle vehicleID="OW_279" type="car"/>
+			<charger chargerID="ch_109" power="3.3"/>
+		</oneway>
+		<oneway id="147" x="687130.8675154999" y="4823018.584005499" freeparking="2">
+			<electrovehicle vehicleID="OW_280" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_281" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="148" x="679711.166915" y="4820716.584086999" freeparking="2">
+			<electrovehicle vehicleID="OW_282" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="149" x="684741.229139" y="4822142.565486" freeparking="2">
+			<vehicle vehicleID="OW_284" type="car"/>
+			<electrovehicle vehicleID="OW_283" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_285" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_110" power="3.3"/>
+			<charger chargerID="ch_111" power="3.3"/>
+		</oneway>
+		<oneway id="150" x="686258.508018" y="4824382.362733" freeparking="2">
+			<vehicle vehicleID="OW_286" type="car"/>
+			<electrovehicle vehicleID="OW_287" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="151" x="680014.0150595" y="4825817.834381999" freeparking="2">
+			<electrovehicle vehicleID="OW_288" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_289" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_112" power="3.3"/>
+			<charger chargerID="ch_113" power="3.3"/>
+		</oneway>
+		<oneway id="152" x="686301.6885845" y="4824356.545902001" freeparking="2">
+			<vehicle vehicleID="OW_290" type="car"/>
+		</oneway>
+		<oneway id="153" x="678805.2454685001" y="4825616.5076864995" freeparking="2">
+			<electrovehicle vehicleID="OW_291" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="154" x="684947.904266" y="4830588.2646355" freeparking="2">
+			<vehicle vehicleID="OW_292" type="car"/>
+			<electrovehicle vehicleID="OW_293" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_114" power="3.3"/>
+		</oneway>
+		<oneway id="155" x="682387.0695694999" y="4826715.8620855" freeparking="2">
+			<vehicle vehicleID="OW_294" type="car"/>
+			<electrovehicle vehicleID="OW_295" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_115" power="3.3"/>
+		</oneway>
+		<oneway id="156" x="684892.0658325" y="4823706.1784795" freeparking="2">
+			<vehicle vehicleID="OW_296" type="car"/>
+			<electrovehicle vehicleID="OW_297" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="157" x="684424.2051085001" y="4824109.6768765" freeparking="2">
+			<electrovehicle vehicleID="OW_298" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="158" x="679501.412361" y="4826834.4092165" freeparking="2">
+			<electrovehicle vehicleID="OW_299" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_300" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_301" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_116" power="3.3"/>
+		</oneway>
+		<oneway id="159" x="685887.204544" y="4818946.498499" freeparking="2">
+			<electrovehicle vehicleID="OW_302" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_117" power="3.3"/>
+		</oneway>
+		<oneway id="160" x="683379.4680335" y="4828261.4767035" freeparking="2">
+			<vehicle vehicleID="OW_304" type="car"/>
+			<electrovehicle vehicleID="OW_303" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_305" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_118" power="3.3"/>
+			<charger chargerID="ch_119" power="3.3"/>
+		</oneway>
+		<oneway id="161" x="683395.1506365" y="4828035.3042595" freeparking="2">
+			<electrovehicle vehicleID="OW_306" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_120" power="3.3"/>
+		</oneway>
+		<oneway id="162" x="685606.4661055" y="4821954.316336" freeparking="2">
+			<electrovehicle vehicleID="OW_307" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_308" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_309" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="163" x="684430.9413725" y="4828987.1464195" freeparking="2">
+			<electrovehicle vehicleID="OW_310" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_311" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_312" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="164" x="679994.3944385" y="4826410.311791999" freeparking="2">
+			<vehicle vehicleID="OW_314" type="car"/>
+			<electrovehicle vehicleID="OW_313" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_315" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_121" power="3.3"/>
+		</oneway>
+		<oneway id="165" x="684482.9360865001" y="4829766.940741" freeparking="2">
+			<vehicle vehicleID="OW_316" type="car"/>
+			<charger chargerID="ch_122" power="3.3"/>
+		</oneway>
+		<oneway id="166" x="684741.229139" y="4822142.565486" freeparking="2">
+			<electrovehicle vehicleID="OW_317" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_318" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_319" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_123" power="3.3"/>
+			<charger chargerID="ch_124" power="3.3"/>
+		</oneway>
+		<oneway id="167" x="684381.1989295001" y="4820610.567452" freeparking="2">
+			<vehicle vehicleID="OW_320" type="car"/>
+			<electrovehicle vehicleID="OW_321" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_322" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_125" power="3.3"/>
+		</oneway>
+		<oneway id="168" x="683501.1918465" y="4818812.4133905005" freeparking="2">
+			<vehicle vehicleID="OW_323" type="car"/>
+			<charger chargerID="ch_126" power="3.3"/>
+		</oneway>
+		<oneway id="169" x="686296.1439799999" y="4824107.0733455" freeparking="2">
+			<vehicle vehicleID="OW_324" type="car"/>
+			<vehicle vehicleID="OW_326" type="car"/>
+			<electrovehicle vehicleID="OW_325" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="170" x="679795.5972374999" y="4827417.613990501" freeparking="2">
+			<electrovehicle vehicleID="OW_327" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_328" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_127" power="3.3"/>
+		</oneway>
+		<oneway id="171" x="680012.1079725" y="4830222.735747499" freeparking="2">
+			<vehicle vehicleID="OW_330" type="car"/>
+			<electrovehicle vehicleID="OW_329" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_128" power="3.3"/>
+			<charger chargerID="ch_129" power="3.3"/>
+		</oneway>
+		<oneway id="172" x="685134.319067" y="4824076.152594499" freeparking="2">
+			<vehicle vehicleID="OW_331" type="car"/>
+			<electrovehicle vehicleID="OW_332" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_130" power="3.3"/>
+			<charger chargerID="ch_131" power="3.3"/>
+		</oneway>
+		<oneway id="173" x="684406.936579" y="4820401.709613" freeparking="2">
+			<electrovehicle vehicleID="OW_333" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_334" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_335" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_132" power="3.3"/>
+			<charger chargerID="ch_133" power="3.3"/>
+		</oneway>
+		<oneway id="174" x="681682.939897" y="4824868.481239" freeparking="2">
+			<vehicle vehicleID="OW_336" type="car"/>
+			<electrovehicle vehicleID="OW_337" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_338" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_134" power="3.3"/>
+		</oneway>
+		<oneway id="175" x="680653.690068" y="4828259.209146" freeparking="2">
+			<electrovehicle vehicleID="OW_339" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_135" power="3.3"/>
+		</oneway>
+		<oneway id="176" x="683893.5336229999" y="4829450.7477775" freeparking="2">
+			<electrovehicle vehicleID="OW_340" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="177" x="682016.407386" y="4824128.890943" freeparking="2">
+			<electrovehicle vehicleID="OW_341" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_342" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_136" power="3.3"/>
+		</oneway>
+		<oneway id="178" x="678514.8603085" y="4823541.593949" freeparking="2">
+			<vehicle vehicleID="OW_343" type="car"/>
+			<charger chargerID="ch_137" power="3.3"/>
+		</oneway>
+		<oneway id="179" x="679297.8394134999" y="4823842.2479880005" freeparking="2">
+			<electrovehicle vehicleID="OW_344" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_345" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_346" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="180" x="683392.4017159999" y="4825968.668592" freeparking="2">
+			<electrovehicle vehicleID="OW_347" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="181" x="686157.3121549999" y="4825933.5722165" freeparking="2">
+			<electrovehicle vehicleID="OW_348" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_349" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_350" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_138" power="3.3"/>
+		</oneway>
+		<oneway id="182" x="681176.43693" y="4825892.848778" freeparking="2">
+			<electrovehicle vehicleID="OW_351" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="183" x="683616.940608" y="4824613.393264" freeparking="2">
+			<vehicle vehicleID="OW_352" type="car"/>
+			<electrovehicle vehicleID="OW_353" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_139" power="3.3"/>
+		</oneway>
+		<oneway id="184" x="681383.2608485" y="4831182.069464" freeparking="2">
+			<electrovehicle vehicleID="OW_354" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="185" x="684747.5688775" y="4829032.4983635" freeparking="2">
+			<electrovehicle vehicleID="OW_355" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_356" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_140" power="3.3"/>
+		</oneway>
+		<oneway id="186" x="681786.1989374999" y="4825881.846190499" freeparking="2">
+			<vehicle vehicleID="OW_357" type="car"/>
+		</oneway>
+		<oneway id="187" x="686269.3801760001" y="4826946.5446185" freeparking="2">
+			<electrovehicle vehicleID="OW_358" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_359" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_360" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_141" power="3.3"/>
+			<charger chargerID="ch_142" power="3.3"/>
+		</oneway>
+		<oneway id="188" x="678923.0628145" y="4821926.3675015" freeparking="2">
+			<vehicle vehicleID="OW_362" type="car"/>
+			<electrovehicle vehicleID="OW_361" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_363" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_143" power="3.3"/>
+			<charger chargerID="ch_144" power="3.3"/>
+		</oneway>
+		<oneway id="189" x="683753.7213205" y="4826972.932150001" freeparking="2">
+			<electrovehicle vehicleID="OW_364" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="190" x="679721.8099155" y="4827932.364752" freeparking="2">
+			<vehicle vehicleID="OW_366" type="car"/>
+			<electrovehicle vehicleID="OW_365" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="191" x="685579.0636835" y="4829424.456098501" freeparking="2">
+			<vehicle vehicleID="OW_368" type="car"/>
+			<electrovehicle vehicleID="OW_367" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_145" power="3.3"/>
+			<charger chargerID="ch_146" power="3.3"/>
+		</oneway>
+		<oneway id="192" x="679713.316471" y="4826241.5140325" freeparking="2">
+			<electrovehicle vehicleID="OW_369" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_370" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_147" power="3.3"/>
+		</oneway>
+		<oneway id="193" x="682009.290756" y="4818794.783141499" freeparking="2">
+			<vehicle vehicleID="OW_372" type="car"/>
+			<electrovehicle vehicleID="OW_371" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_148" power="3.3"/>
+		</oneway>
+		<oneway id="194" x="686287.5748045" y="4824343.939018" freeparking="2">
+			<vehicle vehicleID="OW_373" type="car"/>
+			<vehicle vehicleID="OW_374" type="car"/>
+			<electrovehicle vehicleID="OW_375" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_149" power="3.3"/>
+		</oneway>
+		<oneway id="195" x="686018.8728700001" y="4829213.355771" freeparking="2">
+			<electrovehicle vehicleID="OW_376" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_377" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_378" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_150" power="3.3"/>
+		</oneway>
+		<oneway id="196" x="679259.361783" y="4821837.8708165" freeparking="2">
+			<electrovehicle vehicleID="OW_379" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="197" x="680612.577419" y="4819005.3186565" freeparking="2">
+			<electrovehicle vehicleID="OW_380" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_381" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_151" power="3.3"/>
+		</oneway>
+		<oneway id="198" x="679246.7779635" y="4823600.267125" freeparking="2">
+			<vehicle vehicleID="OW_382" type="car"/>
+			<electrovehicle vehicleID="OW_383" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_152" power="3.3"/>
+		</oneway>
+		<oneway id="199" x="686402.1712105" y="4824616.251329999" freeparking="2">
+			<vehicle vehicleID="OW_385" type="car"/>
+			<electrovehicle vehicleID="OW_384" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="200" x="684623.2641405" y="4822746.2510755" freeparking="2">
+			<vehicle vehicleID="OW_386" type="car"/>
+			<electrovehicle vehicleID="OW_387" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_388" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_153" power="3.3"/>
+		</oneway>
+		<oneway id="201" x="679180.458367" y="4826450.107966" freeparking="2">
+			<electrovehicle vehicleID="OW_389" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="202" x="683190.444377" y="4819839.9751115" freeparking="2">
+			<vehicle vehicleID="OW_390" type="car"/>
+			<vehicle vehicleID="OW_391" type="car"/>
+		</oneway>
+		<oneway id="203" x="686545.4602435001" y="4822389.065171" freeparking="2">
+			<vehicle vehicleID="OW_394" type="car"/>
+			<electrovehicle vehicleID="OW_392" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_393" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_154" power="3.3"/>
+		</oneway>
+		<oneway id="204" x="679204.047182" y="4829850.056978" freeparking="2">
+			<vehicle vehicleID="OW_396" type="car"/>
+			<electrovehicle vehicleID="OW_395" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_397" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="205" x="679923.9446225" y="4821429.8298965" freeparking="2">
+			<electrovehicle vehicleID="OW_398" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_399" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_155" power="3.3"/>
+		</oneway>
+		<oneway id="206" x="678420.672878" y="4824992.53584" freeparking="2">
+			<electrovehicle vehicleID="OW_400" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_401" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="207" x="684857.1629595" y="4828599.622564" freeparking="2">
+			<electrovehicle vehicleID="OW_402" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="208" x="684725.1510155001" y="4822796.077767" freeparking="2">
+			<vehicle vehicleID="OW_405" type="car"/>
+			<electrovehicle vehicleID="OW_403" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_404" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="209" x="682597.5222625" y="4820294.678760501" freeparking="2">
+			<electrovehicle vehicleID="OW_406" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_407" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_408" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_156" power="3.3"/>
+		</oneway>
+		<oneway id="210" x="679087.219599" y="4829804.4053380005" freeparking="2">
+			<electrovehicle vehicleID="OW_409" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_157" power="3.3"/>
+		</oneway>
+		<oneway id="211" x="683674.4282875" y="4830239.7862115" freeparking="2">
+			<vehicle vehicleID="OW_411" type="car"/>
+			<electrovehicle vehicleID="OW_410" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="212" x="684918.539403" y="4830214.1264545005" freeparking="2">
+			<vehicle vehicleID="OW_413" type="car"/>
+			<electrovehicle vehicleID="OW_412" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_414" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_158" power="3.3"/>
+			<charger chargerID="ch_159" power="3.3"/>
+		</oneway>
+		<oneway id="213" x="685872.841651" y="4822165.5147315" freeparking="2">
+			<vehicle vehicleID="OW_415" type="car"/>
+			<electrovehicle vehicleID="OW_416" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_160" power="3.3"/>
+		</oneway>
+		<oneway id="214" x="680807.538218" y="4825709.1919505" freeparking="2">
+			<electrovehicle vehicleID="OW_417" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_161" power="3.3"/>
+		</oneway>
+		<oneway id="215" x="680204.17244" y="4825244.544261999" freeparking="2">
+			<vehicle vehicleID="OW_418" type="car"/>
+		</oneway>
+		<oneway id="216" x="680324.213335" y="4826861.393399" freeparking="2">
+			<electrovehicle vehicleID="OW_419" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_162" power="3.3"/>
+		</oneway>
+		<oneway id="217" x="685003.024248" y="4819932.138803501" freeparking="2">
+			<electrovehicle vehicleID="OW_420" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_163" power="3.3"/>
+		</oneway>
+		<oneway id="218" x="686258.39957" y="4824102.580627" freeparking="2">
+			<electrovehicle vehicleID="OW_421" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_422" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_164" power="3.3"/>
+		</oneway>
+		<oneway id="219" x="682072.997318" y="4818806.471659" freeparking="2">
+			<electrovehicle vehicleID="OW_423" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_165" power="3.3"/>
+		</oneway>
+		<oneway id="220" x="685377.392098" y="4828612.5395375" freeparking="2">
+			<electrovehicle vehicleID="OW_424" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_425" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="221" x="683289.1129765001" y="4820102.648396499" freeparking="2">
+			<electrovehicle vehicleID="OW_426" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_166" power="3.3"/>
+		</oneway>
+		<oneway id="222" x="681631.1791594999" y="4825049.630394001" freeparking="2">
+			<vehicle vehicleID="OW_427" type="car"/>
+		</oneway>
+		<oneway id="223" x="684871.3491605001" y="4824429.0745055005" freeparking="2">
+			<vehicle vehicleID="OW_428" type="car"/>
+			<vehicle vehicleID="OW_430" type="car"/>
+			<electrovehicle vehicleID="OW_429" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_167" power="3.3"/>
+		</oneway>
+		<oneway id="224" x="684051.4721995" y="4825469.0324665" freeparking="2">
+			<vehicle vehicleID="OW_433" type="car"/>
+			<electrovehicle vehicleID="OW_431" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_432" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_168" power="3.3"/>
+		</oneway>
+		<oneway id="225" x="684138.51395" y="4822586.459042501" freeparking="2">
+			<electrovehicle vehicleID="OW_434" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_169" power="3.3"/>
+		</oneway>
+		<oneway id="226" x="680891.4223994999" y="4822646.0780015" freeparking="2">
+			<vehicle vehicleID="OW_435" type="car"/>
+			<electrovehicle vehicleID="OW_436" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="227" x="680200.971063" y="4818792.559462" freeparking="2">
+			<electrovehicle vehicleID="OW_437" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_170" power="3.3"/>
+		</oneway>
+		<oneway id="228" x="684805.4313795" y="4820349.6976665" freeparking="2">
+			<vehicle vehicleID="OW_438" type="car"/>
+			<charger chargerID="ch_171" power="3.3"/>
+		</oneway>
+		<oneway id="229" x="683641.1250984999" y="4823887.689306" freeparking="2">
+			<electrovehicle vehicleID="OW_439" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="230" x="680531.1169654999" y="4823871.5066055" freeparking="2">
+			<vehicle vehicleID="OW_442" type="car"/>
+			<electrovehicle vehicleID="OW_440" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_441" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_172" power="3.3"/>
+		</oneway>
+		<oneway id="231" x="680593.926128" y="4823821.992327999" freeparking="2">
+			<electrovehicle vehicleID="OW_443" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_173" power="3.3"/>
+		</oneway>
+		<oneway id="232" x="682066.3536935" y="4826229.948112" freeparking="2">
+			<vehicle vehicleID="OW_444" type="car"/>
+			<electrovehicle vehicleID="OW_445" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="233" x="683654.1900285" y="4824251.701680999" freeparking="2">
+			<electrovehicle vehicleID="OW_446" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_447" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_448" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_174" power="3.3"/>
+			<charger chargerID="ch_175" power="3.3"/>
+		</oneway>
+		<oneway id="234" x="683682.5298405001" y="4830186.5850325" freeparking="2">
+			<electrovehicle vehicleID="OW_449" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="235" x="684173.898763" y="4826859.757704" freeparking="2">
+			<electrovehicle vehicleID="OW_450" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_176" power="3.3"/>
+		</oneway>
+		<oneway id="236" x="681963.9069745" y="4825299.3378495" freeparking="2">
+			<electrovehicle vehicleID="OW_451" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_452" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_453" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_177" power="3.3"/>
+		</oneway>
+		<oneway id="237" x="679867.1463675001" y="4825239.5399485" freeparking="2">
+			<vehicle vehicleID="OW_454" type="car"/>
+			<electrovehicle vehicleID="OW_455" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="238" x="687397.8005959999" y="4828474.0539225" freeparking="2">
+			<electrovehicle vehicleID="OW_456" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_457" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_458" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_178" power="3.3"/>
+		</oneway>
+		<oneway id="239" x="682378.4654995" y="4826405.086616" freeparking="2">
+			<vehicle vehicleID="OW_459" type="car"/>
+			<electrovehicle vehicleID="OW_460" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="240" x="680061.3896850001" y="4830938.906671001" freeparking="2">
+			<vehicle vehicleID="OW_462" type="car"/>
+			<electrovehicle vehicleID="OW_461" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_179" power="3.3"/>
+			<charger chargerID="ch_180" power="3.3"/>
+		</oneway>
+		<oneway id="241" x="679876.9807115" y="4820451.8693755" freeparking="2">
+			<electrovehicle vehicleID="OW_463" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_464" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_465" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_181" power="3.3"/>
+		</oneway>
+		<oneway id="242" x="684430.9413725" y="4828987.1464195" freeparking="2">
+			<vehicle vehicleID="OW_467" type="car"/>
+			<electrovehicle vehicleID="OW_466" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_468" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_182" power="3.3"/>
+			<charger chargerID="ch_183" power="3.3"/>
+		</oneway>
+		<oneway id="243" x="680245.0195225" y="4826252.157873999" freeparking="2">
+			<electrovehicle vehicleID="OW_469" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="244" x="679922.893119" y="4824191.905669499" freeparking="2">
+			<vehicle vehicleID="OW_470" type="car"/>
+		</oneway>
+		<oneway id="245" x="682559.6236119999" y="4819718.150692999" freeparking="2">
+			<vehicle vehicleID="OW_473" type="car"/>
+			<electrovehicle vehicleID="OW_471" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_472" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_184" power="3.3"/>
+		</oneway>
+		<oneway id="246" x="686088.55715" y="4824156.9082495" freeparking="2">
+			<electrovehicle vehicleID="OW_474" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="247" x="684688.130131" y="4830530.8240555" freeparking="2">
+			<electrovehicle vehicleID="OW_475" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="248" x="679267.2884889999" y="4823806.5113605" freeparking="2">
+			<electrovehicle vehicleID="OW_476" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_477" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="249" x="680646.5075429999" y="4831286.3625485" freeparking="2">
+			<vehicle vehicleID="OW_478" type="car"/>
+			<charger chargerID="ch_185" power="3.3"/>
+		</oneway>
+		<oneway id="250" x="683354.6449645001" y="4828925.891855" freeparking="2">
+			<electrovehicle vehicleID="OW_479" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_480" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_481" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_186" power="3.3"/>
+		</oneway>
+		<oneway id="251" x="682407.3426835" y="4819378.242182" freeparking="2">
+			<electrovehicle vehicleID="OW_482" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_483" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_187" power="3.3"/>
+		</oneway>
+		<oneway id="252" x="681844.7009435" y="4823906.0523955" freeparking="2">
+			<vehicle vehicleID="OW_485" type="car"/>
+			<electrovehicle vehicleID="OW_484" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_188" power="3.3"/>
+		</oneway>
+		<oneway id="253" x="685564.6272205" y="4821787.6479095" freeparking="2">
+			<electrovehicle vehicleID="OW_486" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_189" power="3.3"/>
+		</oneway>
+		<oneway id="254" x="681225.2782035" y="4825900.5859915" freeparking="2">
+			<vehicle vehicleID="OW_487" type="car"/>
+			<vehicle vehicleID="OW_488" type="car"/>
+			<electrovehicle vehicleID="OW_489" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="255" x="683098.9453375" y="4823944.6865005" freeparking="2">
+			<vehicle vehicleID="OW_492" type="car"/>
+			<electrovehicle vehicleID="OW_490" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_491" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_190" power="3.3"/>
+			<charger chargerID="ch_191" power="3.3"/>
+		</oneway>
+		<oneway id="256" x="679267.4310554999" y="4821651.1814475" freeparking="2">
+			<electrovehicle vehicleID="OW_493" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_494" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_495" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_192" power="3.3"/>
+		</oneway>
+		<oneway id="257" x="680484.9794415" y="4823830.8824765" freeparking="2">
+			<electrovehicle vehicleID="OW_496" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="258" x="679492.2238469999" y="4818977.880463" freeparking="2">
+			<electrovehicle vehicleID="OW_497" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="259" x="684255.6450004999" y="4823470.4559335" freeparking="2">
+			<electrovehicle vehicleID="OW_498" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_193" power="3.3"/>
+		</oneway>
+		<oneway id="260" x="686506.8858975" y="4823609.1284275" freeparking="2">
+			<electrovehicle vehicleID="OW_499" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="261" x="684975.849758" y="4820154.163123" freeparking="2">
+			<vehicle vehicleID="OW_501" type="car"/>
+			<electrovehicle vehicleID="OW_500" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="262" x="684782.22516" y="4820680.20467" freeparking="2">
+			<vehicle vehicleID="OW_503" type="car"/>
+			<electrovehicle vehicleID="OW_502" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_194" power="3.3"/>
+		</oneway>
+		<oneway id="263" x="683287.0754145" y="4820115.669134" freeparking="2">
+			<vehicle vehicleID="OW_504" type="car"/>
+		</oneway>
+		<oneway id="264" x="679306.3726959999" y="4821992.462391" freeparking="2">
+			<vehicle vehicleID="OW_507" type="car"/>
+			<electrovehicle vehicleID="OW_505" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_506" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_195" power="3.3"/>
+		</oneway>
+		<oneway id="265" x="680699.8243195" y="4829888.9417635" freeparking="2">
+			<vehicle vehicleID="OW_508" type="car"/>
+			<electrovehicle vehicleID="OW_509" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_510" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_196" power="3.3"/>
+			<charger chargerID="ch_197" power="3.3"/>
+		</oneway>
+		<oneway id="266" x="683839.569868" y="4824015.264072999" freeparking="2">
+			<electrovehicle vehicleID="OW_511" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_198" power="3.3"/>
+		</oneway>
+		<oneway id="267" x="678609.8266855001" y="4821706.1486965" freeparking="2">
+			<electrovehicle vehicleID="OW_512" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_199" power="3.3"/>
+		</oneway>
+		<oneway id="268" x="679408.6802365" y="4825725.482859001" freeparking="2">
+			<vehicle vehicleID="OW_514" type="car"/>
+			<electrovehicle vehicleID="OW_513" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_515" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="269" x="683955.301934" y="4823991.324880499" freeparking="2">
+			<vehicle vehicleID="OW_516" type="car"/>
+			<electrovehicle vehicleID="OW_517" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="270" x="683514.2818725" y="4824028.856513" freeparking="2">
+			<vehicle vehicleID="OW_519" type="car"/>
+			<electrovehicle vehicleID="OW_518" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="271" x="683920.0892155" y="4826545.809954" freeparking="2">
+			<electrovehicle vehicleID="OW_520" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="272" x="679286.961009" y="4824027.126446" freeparking="2">
+			<vehicle vehicleID="OW_521" type="car"/>
+			<electrovehicle vehicleID="OW_522" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="273" x="681635.892533" y="4824885.7414365" freeparking="2">
+			<electrovehicle vehicleID="OW_523" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_524" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_525" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_200" power="3.3"/>
+		</oneway>
+		<oneway id="274" x="680852.4303055" y="4824246.394134" freeparking="2">
+			<electrovehicle vehicleID="OW_526" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_527" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_201" power="3.3"/>
+		</oneway>
+		<oneway id="275" x="687288.956271" y="4823630.334958499" freeparking="2">
+			<electrovehicle vehicleID="OW_528" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="276" x="685288.3596534999" y="4823929.1049885005" freeparking="2">
+			<vehicle vehicleID="OW_529" type="car"/>
+			<charger chargerID="ch_202" power="3.3"/>
+		</oneway>
+		<oneway id="277" x="684127.0762525001" y="4822357.483381" freeparking="2">
+			<vehicle vehicleID="OW_531" type="car"/>
+			<electrovehicle vehicleID="OW_530" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="278" x="679336.720123" y="4825274.2367645" freeparking="2">
+			<electrovehicle vehicleID="OW_532" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_533" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_203" power="3.3"/>
+		</oneway>
+		<oneway id="279" x="682201.481738" y="4824498.656230999" freeparking="2">
+			<electrovehicle vehicleID="OW_534" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_535" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="280" x="679195.0715175001" y="4825996.4824115" freeparking="2">
+			<electrovehicle vehicleID="OW_536" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="281" x="683312.3900659999" y="4822602.312396" freeparking="2">
+			<electrovehicle vehicleID="OW_537" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="282" x="679532.699194" y="4821204.4613965005" freeparking="2">
+			<electrovehicle vehicleID="OW_538" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_539" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_204" power="3.3"/>
+		</oneway>
+		<oneway id="283" x="678520.482482" y="4821570.254215" freeparking="2">
+			<electrovehicle vehicleID="OW_540" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_541" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_542" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_205" power="3.3"/>
+		</oneway>
+		<oneway id="284" x="680024.923624" y="4830001.749696" freeparking="2">
+			<vehicle vehicleID="OW_543" type="car"/>
+		</oneway>
+		<oneway id="285" x="682271.5203155" y="4825900.8725695" freeparking="2">
+			<vehicle vehicleID="OW_544" type="car"/>
+			<electrovehicle vehicleID="OW_545" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_206" power="3.3"/>
+		</oneway>
+		<oneway id="286" x="686276.2983105" y="4824104.7999405" freeparking="2">
+			<electrovehicle vehicleID="OW_546" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_547" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_548" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="287" x="680013.5611615" y="4828516.8410875" freeparking="2">
+			<electrovehicle vehicleID="OW_549" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_550" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_551" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="288" x="678273.3129005" y="4830433.709734" freeparking="2">
+			<electrovehicle vehicleID="OW_552" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="289" x="686729.2734439999" y="4820612.8498599995" freeparking="2">
+			<electrovehicle vehicleID="OW_553" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="290" x="680601.9532195" y="4828479.0901195" freeparking="2">
+			<electrovehicle vehicleID="OW_554" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_555" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_207" power="3.3"/>
+		</oneway>
+		<oneway id="291" x="679713.316471" y="4826241.5140325" freeparking="2">
+			<electrovehicle vehicleID="OW_556" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_557" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_558" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_208" power="3.3"/>
+			<charger chargerID="ch_209" power="3.3"/>
+		</oneway>
+		<oneway id="292" x="682647.0487285" y="4831560.8352675" freeparking="2">
+			<vehicle vehicleID="OW_559" type="car"/>
+			<electrovehicle vehicleID="OW_560" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_561" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_210" power="3.3"/>
+		</oneway>
+		<oneway id="293" x="679289.7363485" y="4820403.394511" freeparking="2">
+			<vehicle vehicleID="OW_563" type="car"/>
+			<electrovehicle vehicleID="OW_562" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_211" power="3.3"/>
+		</oneway>
+		<oneway id="294" x="678790.6611425" y="4823707.53584" freeparking="2">
+			<vehicle vehicleID="OW_564" type="car"/>
+			<electrovehicle vehicleID="OW_565" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="295" x="685222.308579" y="4830013.690406499" freeparking="2">
+			<electrovehicle vehicleID="OW_566" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="296" x="681884.207042" y="4824828.540077" freeparking="2">
+			<vehicle vehicleID="OW_567" type="car"/>
+			<electrovehicle vehicleID="OW_568" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_212" power="3.3"/>
+		</oneway>
+		<oneway id="297" x="684742.3913015" y="4820485.8329975" freeparking="2">
+			<vehicle vehicleID="OW_570" type="car"/>
+			<electrovehicle vehicleID="OW_569" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="298" x="683098.9453375" y="4823944.6865005" freeparking="2">
+			<electrovehicle vehicleID="OW_571" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_213" power="3.3"/>
+		</oneway>
+		<oneway id="299" x="682812.2566249999" y="4819825.860171" freeparking="2">
+			<electrovehicle vehicleID="OW_572" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="300" x="684334.986038" y="4828795.7255415" freeparking="2">
+			<electrovehicle vehicleID="OW_573" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_574" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_214" power="3.3"/>
+		</oneway>
+		<oneway id="301" x="683328.8633615" y="4821988.984683" freeparking="2">
+			<vehicle vehicleID="OW_576" type="car"/>
+			<electrovehicle vehicleID="OW_575" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_577" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_215" power="3.3"/>
+			<charger chargerID="ch_216" power="3.3"/>
+		</oneway>
+		<oneway id="302" x="683393.594893" y="4824025.325815501" freeparking="2">
+			<vehicle vehicleID="OW_578" type="car"/>
+			<electrovehicle vehicleID="OW_579" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="303" x="683527.937676" y="4822114.9492035005" freeparking="2">
+			<vehicle vehicleID="OW_580" type="car"/>
+			<electrovehicle vehicleID="OW_581" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_582" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_217" power="3.3"/>
+			<charger chargerID="ch_218" power="3.3"/>
+		</oneway>
+		<oneway id="304" x="686403.5973700001" y="4830824.5334985" freeparking="2">
+			<electrovehicle vehicleID="OW_583" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_584" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_585" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_219" power="3.3"/>
+		</oneway>
+		<oneway id="305" x="679267.4310554999" y="4821651.1814475" freeparking="2">
+			<electrovehicle vehicleID="OW_586" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="306" x="680026.8273555001" y="4826042.8797455" freeparking="2">
+			<vehicle vehicleID="OW_588" type="car"/>
+			<electrovehicle vehicleID="OW_587" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_589" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_220" power="3.3"/>
+			<charger chargerID="ch_221" power="3.3"/>
+		</oneway>
+		<oneway id="307" x="681226.584666" y="4825852.506742001" freeparking="2">
+			<electrovehicle vehicleID="OW_590" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_591" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_592" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_222" power="3.3"/>
+			<charger chargerID="ch_223" power="3.3"/>
+			<charger chargerID="ch_224" power="3.3"/>
+		</oneway>
+		<oneway id="308" x="681850.9327245" y="4823683.98707" freeparking="2">
+			<vehicle vehicleID="OW_593" type="car"/>
+			<charger chargerID="ch_225" power="3.3"/>
+		</oneway>
+		<oneway id="309" x="681956.5902760001" y="4825864.046617" freeparking="2">
+			<vehicle vehicleID="OW_596" type="car"/>
+			<electrovehicle vehicleID="OW_594" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_595" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="310" x="678790.6611425" y="4823707.53584" freeparking="2">
+			<electrovehicle vehicleID="OW_597" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_598" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="311" x="680826.64212" y="4825059.846473999" freeparking="2">
+			<vehicle vehicleID="OW_599" type="car"/>
+		</oneway>
+		<oneway id="312" x="684226.4946605" y="4826681.0045795" freeparking="2">
+			<vehicle vehicleID="OW_602" type="car"/>
+			<electrovehicle vehicleID="OW_600" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_601" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_226" power="3.3"/>
+			<charger chargerID="ch_227" power="3.3"/>
+		</oneway>
+		<oneway id="313" x="682142.7320244999" y="4819317.823416" freeparking="2">
+			<vehicle vehicleID="OW_604" type="car"/>
+			<electrovehicle vehicleID="OW_603" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_228" power="3.3"/>
+		</oneway>
+		<oneway id="314" x="680651.4624015" y="4824240.3448675" freeparking="2">
+			<electrovehicle vehicleID="OW_605" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_606" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_607" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_229" power="3.3"/>
+		</oneway>
+		<oneway id="315" x="679785.8615285" y="4826789.466709" freeparking="2">
+			<electrovehicle vehicleID="OW_608" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_609" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="316" x="682247.0408265" y="4826220.097765001" freeparking="2">
+			<electrovehicle vehicleID="OW_610" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_611" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_230" power="3.3"/>
+		</oneway>
+		<oneway id="317" x="684978.773787" y="4820871.931891" freeparking="2">
+			<electrovehicle vehicleID="OW_612" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_231" power="3.3"/>
+		</oneway>
+		<oneway id="318" x="679499.7967675" y="4826975.423482001" freeparking="2">
+			<electrovehicle vehicleID="OW_613" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_614" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="319" x="687419.9506059999" y="4822223.4308725" freeparking="2">
+			<vehicle vehicleID="OW_617" type="car"/>
+			<electrovehicle vehicleID="OW_615" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_616" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="320" x="680449.567237" y="4826868.3147165" freeparking="2">
+			<vehicle vehicleID="OW_618" type="car"/>
+			<electrovehicle vehicleID="OW_619" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_620" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_232" power="3.3"/>
+			<charger chargerID="ch_233" power="3.3"/>
+		</oneway>
+		<oneway id="321" x="679964.3040105" y="4828459.3633355" freeparking="2">
+			<electrovehicle vehicleID="OW_621" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="322" x="680796.3726455" y="4820419.858397501" freeparking="2">
+			<electrovehicle vehicleID="OW_622" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_623" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_234" power="3.3"/>
+		</oneway>
+		<oneway id="323" x="681998.8820185" y="4825854.6014135" freeparking="2">
+			<electrovehicle vehicleID="OW_624" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_625" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_626" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="324" x="682966.9719275001" y="4825902.469571" freeparking="2">
+			<vehicle vehicleID="OW_629" type="car"/>
+			<electrovehicle vehicleID="OW_627" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_628" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="325" x="685564.6272205" y="4821787.6479095" freeparking="2">
+			<electrovehicle vehicleID="OW_630" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_631" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_632" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="326" x="680646.5075429999" y="4831286.3625485" freeparking="2">
+			<vehicle vehicleID="OW_635" type="car"/>
+			<electrovehicle vehicleID="OW_633" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_634" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="327" x="680637.663564" y="4819611.570736" freeparking="2">
+			<vehicle vehicleID="OW_637" type="car"/>
+			<electrovehicle vehicleID="OW_636" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_638" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_235" power="3.3"/>
+			<charger chargerID="ch_236" power="3.3"/>
+		</oneway>
+		<oneway id="328" x="682293.533269" y="4819116.75958" freeparking="2">
+			<vehicle vehicleID="OW_640" type="car"/>
+			<electrovehicle vehicleID="OW_639" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="329" x="679356.8168850001" y="4821748.6071" freeparking="2">
+			<vehicle vehicleID="OW_641" type="car"/>
+			<electrovehicle vehicleID="OW_642" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_643" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_237" power="3.3"/>
+			<charger chargerID="ch_238" power="3.3"/>
+			<charger chargerID="ch_239" power="3.3"/>
+		</oneway>
+		<oneway id="330" x="679911.011149" y="4828471.726198999" freeparking="2">
+			<electrovehicle vehicleID="OW_644" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="331" x="686281.499247" y="4824111.8521435" freeparking="2">
+			<electrovehicle vehicleID="OW_645" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_646" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="332" x="683065.5606635001" y="4820688.333281" freeparking="2">
+			<electrovehicle vehicleID="OW_647" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_648" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_240" power="3.3"/>
+		</oneway>
+		<oneway id="333" x="685665.8162155" y="4829825.177004" freeparking="2">
+			<vehicle vehicleID="OW_650" type="car"/>
+			<electrovehicle vehicleID="OW_649" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="334" x="685215.7522140001" y="4821352.4398345" freeparking="2">
+			<electrovehicle vehicleID="OW_651" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="335" x="685260.7710414999" y="4828609.217017001" freeparking="2">
+			<electrovehicle vehicleID="OW_652" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_653" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="336" x="684773.5026070001" y="4823914.279965" freeparking="2">
+			<vehicle vehicleID="OW_654" type="car"/>
+			<charger chargerID="ch_241" power="3.3"/>
+		</oneway>
+		<oneway id="337" x="683382.0423785001" y="4820221.1400165" freeparking="2">
+			<electrovehicle vehicleID="OW_655" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_656" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_657" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="338" x="678934.082056" y="4820166.453536499" freeparking="2">
+			<vehicle vehicleID="OW_659" type="car"/>
+			<vehicle vehicleID="OW_660" type="car"/>
+			<electrovehicle vehicleID="OW_658" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_242" power="3.3"/>
+		</oneway>
+		<oneway id="339" x="686274.2660495001" y="4832060.043725001" freeparking="2">
+			<vehicle vehicleID="OW_661" type="car"/>
+			<vehicle vehicleID="OW_662" type="car"/>
+			<charger chargerID="ch_243" power="3.3"/>
+			<charger chargerID="ch_244" power="3.3"/>
+		</oneway>
+		<oneway id="340" x="683408.1623450001" y="4819458.680257" freeparking="2">
+			<vehicle vehicleID="OW_664" type="car"/>
+			<electrovehicle vehicleID="OW_663" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_245" power="3.3"/>
+			<charger chargerID="ch_246" power="3.3"/>
+		</oneway>
+		<oneway id="341" x="680675.9602669999" y="4830684.005425001" freeparking="2">
+			<vehicle vehicleID="OW_665" type="car"/>
+			<electrovehicle vehicleID="OW_666" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_667" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_247" power="3.3"/>
+			<charger chargerID="ch_248" power="3.3"/>
+		</oneway>
+		<oneway id="342" x="681668.365978" y="4823789.615599" freeparking="2">
+			<vehicle vehicleID="OW_668" type="car"/>
+			<electrovehicle vehicleID="OW_669" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_249" power="3.3"/>
+		</oneway>
+		<oneway id="343" x="681789.9730839999" y="4818836.261288" freeparking="2">
+			<electrovehicle vehicleID="OW_670" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_671" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="344" x="679879.148899" y="4831300.9923275" freeparking="2">
+			<vehicle vehicleID="OW_673" type="car"/>
+			<electrovehicle vehicleID="OW_672" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_674" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="345" x="679309.699419" y="4825078.453883" freeparking="2">
+			<vehicle vehicleID="OW_677" type="car"/>
+			<electrovehicle vehicleID="OW_675" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_676" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_250" power="3.3"/>
+			<charger chargerID="ch_251" power="3.3"/>
+		</oneway>
+		<oneway id="346" x="679448.5858655" y="4821741.8323235" freeparking="2">
+			<vehicle vehicleID="OW_680" type="car"/>
+			<electrovehicle vehicleID="OW_678" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_679" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_252" power="3.3"/>
+			<charger chargerID="ch_253" power="3.3"/>
+		</oneway>
+		<oneway id="347" x="685590.1446984999" y="4823937.427878" freeparking="2">
+			<electrovehicle vehicleID="OW_681" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="348" x="683652.2258969999" y="4827955.438947501" freeparking="2">
+			<vehicle vehicleID="OW_684" type="car"/>
+			<electrovehicle vehicleID="OW_682" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_683" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_254" power="3.3"/>
+		</oneway>
+		<oneway id="349" x="679972.9677275" y="4826632.0412179995" freeparking="2">
+			<electrovehicle vehicleID="OW_685" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_686" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_255" power="3.3"/>
+		</oneway>
+		<oneway id="350" x="681562.2731905" y="4824951.192654" freeparking="2">
+			<vehicle vehicleID="OW_687" type="car"/>
+			<electrovehicle vehicleID="OW_688" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="351" x="682069.9093909999" y="4822881.789398" freeparking="2">
+			<electrovehicle vehicleID="OW_689" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_690" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_691" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_256" power="3.3"/>
+			<charger chargerID="ch_257" power="3.3"/>
+		</oneway>
+		<oneway id="352" x="685959.611251" y="4830584.970633" freeparking="2">
+			<electrovehicle vehicleID="OW_692" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="353" x="685595.8487515" y="4822068.6000175" freeparking="2">
+			<vehicle vehicleID="OW_694" type="car"/>
+			<vehicle vehicleID="OW_695" type="car"/>
+			<electrovehicle vehicleID="OW_693" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_258" power="3.3"/>
+		</oneway>
+		<oneway id="354" x="679747.7117725001" y="4824653.3654295" freeparking="2">
+			<vehicle vehicleID="OW_697" type="car"/>
+			<electrovehicle vehicleID="OW_696" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_698" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_259" power="3.3"/>
+		</oneway>
+		<oneway id="355" x="684700.7147240001" y="4830810.477062" freeparking="2">
+			<electrovehicle vehicleID="OW_699" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_260" power="3.3"/>
+		</oneway>
+		<oneway id="356" x="687280.2152829999" y="4832289.533908499" freeparking="2">
+			<vehicle vehicleID="OW_700" type="car"/>
+			<electrovehicle vehicleID="OW_701" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="357" x="684363.77135" y="4824050.993442" freeparking="2">
+			<electrovehicle vehicleID="OW_702" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_703" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_704" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="358" x="685696.8522590001" y="4822974.076016" freeparking="2">
+			<electrovehicle vehicleID="OW_705" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="359" x="681970.1032575001" y="4820453.868946" freeparking="2">
+			<electrovehicle vehicleID="OW_706" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_707" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_708" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_261" power="3.3"/>
+			<charger chargerID="ch_262" power="3.3"/>
+		</oneway>
+		<oneway id="360" x="678243.358762" y="4831281.7057075" freeparking="2">
+			<electrovehicle vehicleID="OW_709" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="361" x="682000.0023735" y="4825821.627177499" freeparking="2">
+			<vehicle vehicleID="OW_710" type="car"/>
+			<vehicle vehicleID="OW_711" type="car"/>
+			<electrovehicle vehicleID="OW_712" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_263" power="3.3"/>
+		</oneway>
+		<oneway id="362" x="684023.151692" y="4826747.1341515" freeparking="2">
+			<electrovehicle vehicleID="OW_713" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_714" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_264" power="3.3"/>
+		</oneway>
+		<oneway id="363" x="681336.8307765" y="4818824.244456001" freeparking="2">
+			<electrovehicle vehicleID="OW_715" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_716" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_717" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_265" power="3.3"/>
+			<charger chargerID="ch_266" power="3.3"/>
+		</oneway>
+		<oneway id="364" x="680031.8790414999" y="4819971.6181419995" freeparking="2">
+			<electrovehicle vehicleID="OW_718" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_719" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_267" power="3.3"/>
+		</oneway>
+		<oneway id="365" x="686257.0198065001" y="4824138.9158935" freeparking="2">
+			<vehicle vehicleID="OW_722" type="car"/>
+			<electrovehicle vehicleID="OW_720" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_721" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_268" power="3.3"/>
+			<charger chargerID="ch_269" power="3.3"/>
+		</oneway>
+		<oneway id="366" x="679965.3941215" y="4828216.304014999" freeparking="2">
+			<vehicle vehicleID="OW_723" type="car"/>
+			<vehicle vehicleID="OW_725" type="car"/>
+			<electrovehicle vehicleID="OW_724" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_270" power="3.3"/>
+		</oneway>
+		<oneway id="367" x="684824.307592" y="4825907.897621499" freeparking="2">
+			<electrovehicle vehicleID="OW_726" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_271" power="3.3"/>
+		</oneway>
+		<oneway id="368" x="686117.3383195" y="4823192.7253600005" freeparking="2">
+			<electrovehicle vehicleID="OW_727" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_728" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="369" x="684043.622025" y="4830668.143908501" freeparking="2">
+			<vehicle vehicleID="OW_729" type="car"/>
+		</oneway>
+		<oneway id="370" x="679919.3519735" y="4830109.7147735" freeparking="2">
+			<electrovehicle vehicleID="OW_730" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="371" x="681718.6308985" y="4826149.510846499" freeparking="2">
+			<vehicle vehicleID="OW_733" type="car"/>
+			<electrovehicle vehicleID="OW_731" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_732" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_272" power="3.3"/>
+		</oneway>
+		<oneway id="372" x="679883.967626" y="4826741.9870245" freeparking="2">
+			<electrovehicle vehicleID="OW_734" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="373" x="679524.224966" y="4827834.5987825" freeparking="2">
+			<electrovehicle vehicleID="OW_735" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_273" power="3.3"/>
+		</oneway>
+		<oneway id="374" x="679879.9553789999" y="4830292.2590595" freeparking="2">
+			<electrovehicle vehicleID="OW_736" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="375" x="679711.166915" y="4820716.584086999" freeparking="2">
+			<electrovehicle vehicleID="OW_737" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_738" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_274" power="3.3"/>
+		</oneway>
+		<oneway id="376" x="686785.1807455" y="4820234.9104645" freeparking="2">
+			<electrovehicle vehicleID="OW_739" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_275" power="3.3"/>
+		</oneway>
+		<oneway id="377" x="683370.5344275" y="4827617.460030001" freeparking="2">
+			<vehicle vehicleID="OW_741" type="car"/>
+			<electrovehicle vehicleID="OW_740" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_742" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_276" power="3.3"/>
+		</oneway>
+		<oneway id="378" x="681961.365632" y="4819173.6934465" freeparking="2">
+			<vehicle vehicleID="OW_743" type="car"/>
+			<electrovehicle vehicleID="OW_744" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="379" x="686291.6487700001" y="4824787.3820695" freeparking="2">
+			<electrovehicle vehicleID="OW_745" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_746" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_747" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_277" power="3.3"/>
+		</oneway>
+		<oneway id="380" x="682635.3944335" y="4823932.043933" freeparking="2">
+			<electrovehicle vehicleID="OW_748" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_749" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="381" x="682607.74822" y="4826054.432257" freeparking="2">
+			<vehicle vehicleID="OW_751" type="car"/>
+			<vehicle vehicleID="OW_752" type="car"/>
+			<electrovehicle vehicleID="OW_750" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_278" power="3.3"/>
+			<charger chargerID="ch_279" power="3.3"/>
+		</oneway>
+		<oneway id="382" x="679795.7393565" y="4823827.513898" freeparking="2">
+			<electrovehicle vehicleID="OW_753" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_754" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_755" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_280" power="3.3"/>
+		</oneway>
+		<oneway id="383" x="682801.4469685" y="4825937.8234035" freeparking="2">
+			<vehicle vehicleID="OW_756" type="car"/>
+			<electrovehicle vehicleID="OW_757" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_758" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="384" x="681244.2287755001" y="4830115.7051285" freeparking="2">
+			<electrovehicle vehicleID="OW_759" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_760" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_281" power="3.3"/>
+		</oneway>
+		<oneway id="385" x="679460.714368" y="4820382.8275615" freeparking="2">
+			<electrovehicle vehicleID="OW_761" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="386" x="683780.681596" y="4824586.897005" freeparking="2">
+			<electrovehicle vehicleID="OW_762" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_763" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="387" x="678825.2615195" y="4831115.69225" freeparking="2">
+			<electrovehicle vehicleID="OW_764" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_765" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="388" x="678670.0463045" y="4830029.2117595" freeparking="2">
+			<electrovehicle vehicleID="OW_766" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_767" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_282" power="3.3"/>
+			<charger chargerID="ch_283" power="3.3"/>
+		</oneway>
+		<oneway id="389" x="681945.753591" y="4825874.422764" freeparking="2">
+			<vehicle vehicleID="OW_768" type="car"/>
+			<vehicle vehicleID="OW_769" type="car"/>
+			<electrovehicle vehicleID="OW_770" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="390" x="686274.2660495001" y="4832060.043725001" freeparking="2">
+			<electrovehicle vehicleID="OW_771" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="391" x="679958.109688" y="4831302.5405035" freeparking="2">
+			<vehicle vehicleID="OW_772" type="car"/>
+			<electrovehicle vehicleID="OW_773" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_774" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_284" power="3.3"/>
+		</oneway>
+		<oneway id="392" x="678462.2479264999" y="4823586.991615" freeparking="2">
+			<electrovehicle vehicleID="OW_775" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_776" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_285" power="3.3"/>
+			<charger chargerID="ch_286" power="3.3"/>
+		</oneway>
+		<oneway id="393" x="684741.3261475" y="4829289.379826" freeparking="2">
+			<vehicle vehicleID="OW_777" type="car"/>
+			<electrovehicle vehicleID="OW_778" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="394" x="683388.991976" y="4820103.226307" freeparking="2">
+			<vehicle vehicleID="OW_779" type="car"/>
+			<vehicle vehicleID="OW_780" type="car"/>
+			<charger chargerID="ch_287" power="3.3"/>
+		</oneway>
+		<oneway id="395" x="680025.210773" y="4825238.5574625" freeparking="2">
+			<electrovehicle vehicleID="OW_781" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="396" x="684998.1453780001" y="4830864.3399020005" freeparking="2">
+			<electrovehicle vehicleID="OW_782" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_783" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_784" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_288" power="3.3"/>
+			<charger chargerID="ch_289" power="3.3"/>
+		</oneway>
+		<oneway id="397" x="683793.2997224999" y="4825386.539342999" freeparking="2">
+			<vehicle vehicleID="OW_785" type="car"/>
+			<vehicle vehicleID="OW_786" type="car"/>
+			<vehicle vehicleID="OW_787" type="car"/>
+		</oneway>
+		<oneway id="398" x="680399.1574794999" y="4825249.9590125" freeparking="2">
+			<electrovehicle vehicleID="OW_788" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_789" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="399" x="682370.0044285001" y="4820465.1006685" freeparking="2">
+			<vehicle vehicleID="OW_790" type="car"/>
+			<electrovehicle vehicleID="OW_791" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_792" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="400" x="679970.3181004999" y="4821038.0445485" freeparking="2">
+			<electrovehicle vehicleID="OW_793" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_794" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="401" x="686094.6011399999" y="4823948.5937135" freeparking="2">
+			<vehicle vehicleID="OW_795" type="car"/>
+			<vehicle vehicleID="OW_796" type="car"/>
+		</oneway>
+		<oneway id="402" x="681956.5902760001" y="4825864.046617" freeparking="2">
+			<vehicle vehicleID="OW_797" type="car"/>
+			<electrovehicle vehicleID="OW_798" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_290" power="3.3"/>
+		</oneway>
+		<oneway id="403" x="679543.4610405" y="4820732.100315" freeparking="2">
+			<vehicle vehicleID="OW_799" type="car"/>
+			<vehicle vehicleID="OW_800" type="car"/>
+			<electrovehicle vehicleID="OW_801" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_291" power="3.3"/>
+		</oneway>
+		<oneway id="404" x="685633.4680765" y="4828957.4800154995" freeparking="2">
+			<vehicle vehicleID="OW_804" type="car"/>
+			<electrovehicle vehicleID="OW_802" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_803" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_292" power="3.3"/>
+		</oneway>
+		<oneway id="405" x="680816.2336319999" y="4825410.8817035" freeparking="2">
+			<vehicle vehicleID="OW_806" type="car"/>
+			<electrovehicle vehicleID="OW_805" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_293" power="3.3"/>
+		</oneway>
+		<oneway id="406" x="683799.094492" y="4829611.5451035" freeparking="2">
+			<vehicle vehicleID="OW_807" type="car"/>
+			<electrovehicle vehicleID="OW_808" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_809" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="407" x="686890.7567155" y="4819178.1602024995" freeparking="2">
+			<electrovehicle vehicleID="OW_810" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_294" power="3.3"/>
+		</oneway>
+		<oneway id="408" x="678486.5209905" y="4822683.2554495" freeparking="2">
+			<electrovehicle vehicleID="OW_811" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="409" x="686210.5340305" y="4822992.859654" freeparking="2">
+			<electrovehicle vehicleID="OW_812" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="410" x="682001.7350505" y="4825104.2033115" freeparking="2">
+			<vehicle vehicleID="OW_813" type="car"/>
+			<electrovehicle vehicleID="OW_814" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_815" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="411" x="679568.552896" y="4825237.179581" freeparking="2">
+			<electrovehicle vehicleID="OW_816" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_817" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_818" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_295" power="3.3"/>
+		</oneway>
+		<oneway id="412" x="680173.551578" y="4819769.372104" freeparking="2">
+			<electrovehicle vehicleID="OW_819" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_820" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_821" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_296" power="3.3"/>
+		</oneway>
+		<oneway id="413" x="682584.119123" y="4823822.0666195005" freeparking="2">
+			<electrovehicle vehicleID="OW_822" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="414" x="683335.9700625" y="4821726.2158615" freeparking="2">
+			<vehicle vehicleID="OW_823" type="car"/>
+			<vehicle vehicleID="OW_824" type="car"/>
+			<electrovehicle vehicleID="OW_825" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_297" power="3.3"/>
+			<charger chargerID="ch_298" power="3.3"/>
+		</oneway>
+		<oneway id="415" x="683514.2818725" y="4824028.856513" freeparking="2">
+			<vehicle vehicleID="OW_826" type="car"/>
+		</oneway>
+		<oneway id="416" x="683456.0767554999" y="4820086.4566435" freeparking="2">
+			<electrovehicle vehicleID="OW_827" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_828" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_299" power="3.3"/>
+		</oneway>
+		<oneway id="417" x="680710.4247175001" y="4829490.0559944995" freeparking="2">
+			<vehicle vehicleID="OW_829" type="car"/>
+			<vehicle vehicleID="OW_830" type="car"/>
+			<charger chargerID="ch_300" power="3.3"/>
+		</oneway>
+		<oneway id="418" x="681965.017208" y="4825262.4121509995" freeparking="2">
+			<electrovehicle vehicleID="OW_831" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_832" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_301" power="3.3"/>
+		</oneway>
+		<oneway id="419" x="678243.358762" y="4831281.7057075" freeparking="2">
+			<vehicle vehicleID="OW_834" type="car"/>
+			<electrovehicle vehicleID="OW_833" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_835" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_302" power="3.3"/>
+		</oneway>
+		<oneway id="420" x="686049.5814479999" y="4822988.1549245" freeparking="2">
+			<electrovehicle vehicleID="OW_836" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_303" power="3.3"/>
+		</oneway>
+		<oneway id="421" x="684875.6435420001" y="4824278.253991" freeparking="2">
+			<electrovehicle vehicleID="OW_837" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_304" power="3.3"/>
+		</oneway>
+		<oneway id="422" x="683966.180402" y="4826631.956814" freeparking="2">
+			<electrovehicle vehicleID="OW_838" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_305" power="3.3"/>
+		</oneway>
+		<oneway id="423" x="687090.0011995" y="4824133.9177525" freeparking="2">
+			<electrovehicle vehicleID="OW_839" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_840" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="424" x="681946.525214" y="4825853.414984001" freeparking="2">
+			<electrovehicle vehicleID="OW_841" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="425" x="680133.268822" y="4818790.3237955" freeparking="2">
+			<vehicle vehicleID="OW_843" type="car"/>
+			<electrovehicle vehicleID="OW_842" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_844" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_306" power="3.3"/>
+			<charger chargerID="ch_307" power="3.3"/>
+		</oneway>
+		<oneway id="426" x="681735.1058525001" y="4825861.536647" freeparking="2">
+			<electrovehicle vehicleID="OW_845" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="427" x="684529.2598135" y="4822436.6289115" freeparking="2">
+			<vehicle vehicleID="OW_846" type="car"/>
+		</oneway>
+		<oneway id="428" x="684762.144952" y="4824282.1330535" freeparking="2">
+			<electrovehicle vehicleID="OW_847" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="429" x="683461.2887365001" y="4823810.4287015" freeparking="2">
+			<electrovehicle vehicleID="OW_848" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_849" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="430" x="684421.9686055" y="4823473.680867" freeparking="2">
+			<electrovehicle vehicleID="OW_850" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_851" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_308" power="3.3"/>
+		</oneway>
+		<oneway id="431" x="681162.6072505" y="4820429.8087895" freeparking="2">
+			<vehicle vehicleID="OW_852" type="car"/>
+			<vehicle vehicleID="OW_854" type="car"/>
+			<electrovehicle vehicleID="OW_853" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_309" power="3.3"/>
+			<charger chargerID="ch_310" power="3.3"/>
+		</oneway>
+		<oneway id="432" x="686260.7163965" y="4824116.4051445" freeparking="2">
+			<electrovehicle vehicleID="OW_855" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_311" power="3.3"/>
+		</oneway>
+		<oneway id="433" x="679089.713915" y="4820372.6689410005" freeparking="2">
+			<vehicle vehicleID="OW_856" type="car"/>
+			<charger chargerID="ch_312" power="3.3"/>
+		</oneway>
+		<oneway id="434" x="686496.174729" y="4823962.641246" freeparking="2">
+			<electrovehicle vehicleID="OW_857" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_313" power="3.3"/>
+		</oneway>
+		<oneway id="435" x="683252.1244935" y="4826440.027172" freeparking="2">
+			<electrovehicle vehicleID="OW_858" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="436" x="687433.489904" y="4819590.295427" freeparking="2">
+			<vehicle vehicleID="OW_859" type="car"/>
+			<charger chargerID="ch_314" power="3.3"/>
+		</oneway>
+		<oneway id="437" x="683204.5060980001" y="4826331.447963" freeparking="2">
+			<electrovehicle vehicleID="OW_860" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="438" x="686353.5488984999" y="4826321.156918" freeparking="2">
+			<electrovehicle vehicleID="OW_861" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_862" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="439" x="685282.282956" y="4824131.454789" freeparking="2">
+			<electrovehicle vehicleID="OW_863" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_864" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_315" power="3.3"/>
+		</oneway>
+		<oneway id="440" x="685823.0330294999" y="4828223.9076025" freeparking="2">
+			<vehicle vehicleID="OW_866" type="car"/>
+			<electrovehicle vehicleID="OW_865" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_867" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_316" power="3.3"/>
+			<charger chargerID="ch_317" power="3.3"/>
+		</oneway>
+		<oneway id="441" x="685590.1446984999" y="4823937.427878" freeparking="2">
+			<electrovehicle vehicleID="OW_868" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_318" power="3.3"/>
+		</oneway>
+		<oneway id="442" x="680122.3695285" y="4830506.638963999" freeparking="2">
+			<vehicle vehicleID="OW_871" type="car"/>
+			<electrovehicle vehicleID="OW_869" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_870" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_319" power="3.3"/>
+			<charger chargerID="ch_320" power="3.3"/>
+		</oneway>
+		<oneway id="443" x="682551.6954225" y="4821090.367959" freeparking="2">
+			<electrovehicle vehicleID="OW_872" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_873" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_321" power="3.3"/>
+		</oneway>
+		<oneway id="444" x="686938.515208" y="4819776.309681" freeparking="2">
+			<electrovehicle vehicleID="OW_874" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_875" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="445" x="681997.5451125" y="4819056.8042025" freeparking="2">
+			<electrovehicle vehicleID="OW_876" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="446" x="683597.1224215" y="4830279.137517" freeparking="2">
+			<electrovehicle vehicleID="OW_877" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_878" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="447" x="681625.7546069999" y="4825233.823001" freeparking="2">
+			<electrovehicle vehicleID="OW_879" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_880" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_881" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_322" power="3.3"/>
+		</oneway>
+		<oneway id="448" x="687319.436914" y="4818989.7914825" freeparking="2">
+			<vehicle vehicleID="OW_882" type="car"/>
+			<vehicle vehicleID="OW_883" type="car"/>
+			<charger chargerID="ch_323" power="3.3"/>
+			<charger chargerID="ch_324" power="3.3"/>
+		</oneway>
+		<oneway id="449" x="687377.121479" y="4821603.411433" freeparking="2">
+			<electrovehicle vehicleID="OW_884" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="450" x="681033.475848" y="4824865.625895" freeparking="2">
+			<vehicle vehicleID="OW_886" type="car"/>
+			<electrovehicle vehicleID="OW_885" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_887" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_325" power="3.3"/>
+		</oneway>
+		<oneway id="451" x="683680.2460980001" y="4824107.4737505" freeparking="2">
+			<electrovehicle vehicleID="OW_888" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_889" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_326" power="3.3"/>
+			<charger chargerID="ch_327" power="3.3"/>
+		</oneway>
+		<oneway id="452" x="679364.5748305" y="4822142.9185085" freeparking="2">
+			<electrovehicle vehicleID="OW_890" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="453" x="683408.1623450001" y="4819458.680257" freeparking="2">
+			<electrovehicle vehicleID="OW_891" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="454" x="683589.359735" y="4830728.295453001" freeparking="2">
+			<electrovehicle vehicleID="OW_892" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="455" x="682973.9831535" y="4825976.6194265" freeparking="2">
+			<electrovehicle vehicleID="OW_893" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_328" power="3.3"/>
+		</oneway>
+		<oneway id="456" x="682220.0569765" y="4825836.572011501" freeparking="2">
+			<vehicle vehicleID="OW_894" type="car"/>
+		</oneway>
+		<oneway id="457" x="681958.4023745" y="4824857.425326999" freeparking="2">
+			<electrovehicle vehicleID="OW_895" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_896" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="458" x="680314.1307365" y="4823632.433131" freeparking="2">
+			<electrovehicle vehicleID="OW_897" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_898" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="459" x="678308.519463" y="4829030.1680735" freeparking="2">
+			<electrovehicle vehicleID="OW_899" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_329" power="3.3"/>
+		</oneway>
+		<oneway id="460" x="679395.693796" y="4820381.0422225" freeparking="2">
+			<electrovehicle vehicleID="OW_900" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="461" x="679876.9807115" y="4820451.8693755" freeparking="2">
+			<electrovehicle vehicleID="OW_901" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="462" x="683802.239232" y="4828975.322577" freeparking="2">
+			<electrovehicle vehicleID="OW_902" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_903" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_330" power="3.3"/>
+			<charger chargerID="ch_331" power="3.3"/>
+		</oneway>
+		<oneway id="463" x="678579.3792989999" y="4819372.9640895" freeparking="2">
+			<electrovehicle vehicleID="OW_904" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="464" x="680122.3695285" y="4830506.638963999" freeparking="2">
+			<vehicle vehicleID="OW_906" type="car"/>
+			<electrovehicle vehicleID="OW_905" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_907" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_332" power="3.3"/>
+		</oneway>
+		<oneway id="465" x="684960.340112" y="4820213.350145" freeparking="2">
+			<electrovehicle vehicleID="OW_908" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_909" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_333" power="3.3"/>
+		</oneway>
+		<oneway id="466" x="682144.3628695" y="4826074.9044475" freeparking="2">
+			<vehicle vehicleID="OW_911" type="car"/>
+			<electrovehicle vehicleID="OW_910" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="467" x="679329.5006975001" y="4824831.951426" freeparking="2">
+			<electrovehicle vehicleID="OW_912" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="468" x="678822.5368814999" y="4824999.452512" freeparking="2">
+			<vehicle vehicleID="OW_913" type="car"/>
+			<electrovehicle vehicleID="OW_914" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_334" power="3.3"/>
+		</oneway>
+		<oneway id="469" x="680326.7205650001" y="4826195.186001999" freeparking="2">
+			<electrovehicle vehicleID="OW_915" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="470" x="683839.569868" y="4824015.264072999" freeparking="2">
+			<electrovehicle vehicleID="OW_916" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_917" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_918" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="471" x="682746.704382" y="4825890.5566335" freeparking="2">
+			<vehicle vehicleID="OW_919" type="car"/>
+			<vehicle vehicleID="OW_920" type="car"/>
+			<electrovehicle vehicleID="OW_921" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_335" power="3.3"/>
+		</oneway>
+		<oneway id="472" x="679314.3761675" y="4825279.0580285005" freeparking="2">
+			<electrovehicle vehicleID="OW_922" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="473" x="678198.73526" y="4821959.1213015" freeparking="2">
+			<electrovehicle vehicleID="OW_923" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_336" power="3.3"/>
+		</oneway>
+		<oneway id="474" x="683446.47758" y="4824254.153975" freeparking="2">
+			<vehicle vehicleID="OW_924" type="car"/>
+			<electrovehicle vehicleID="OW_925" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="475" x="680008.6057124999" y="4827246.632876" freeparking="2">
+			<vehicle vehicleID="OW_926" type="car"/>
+			<vehicle vehicleID="OW_927" type="car"/>
+		</oneway>
+		<oneway id="476" x="686227.491626" y="4826315.6591885" freeparking="2">
+			<electrovehicle vehicleID="OW_928" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="477" x="682909.8362100001" y="4826056.6023485" freeparking="2">
+			<electrovehicle vehicleID="OW_929" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_930" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_337" power="3.3"/>
+		</oneway>
+		<oneway id="478" x="686789.3632995" y="4818964.670793001" freeparking="2">
+			<electrovehicle vehicleID="OW_931" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_932" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_933" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_338" power="3.3"/>
+		</oneway>
+		<oneway id="479" x="683280.1849034999" y="4826890.087708499" freeparking="2">
+			<vehicle vehicleID="OW_934" type="car"/>
+			<charger chargerID="ch_339" power="3.3"/>
+		</oneway>
+		<oneway id="480" x="678822.5368814999" y="4824999.452512" freeparking="2">
+			<electrovehicle vehicleID="OW_935" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_936" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_340" power="3.3"/>
+		</oneway>
+		<oneway id="481" x="681909.8134955" y="4826009.4429055005" freeparking="2">
+			<vehicle vehicleID="OW_937" type="car"/>
+			<vehicle vehicleID="OW_938" type="car"/>
+			<charger chargerID="ch_341" power="3.3"/>
+			<charger chargerID="ch_342" power="3.3"/>
+		</oneway>
+		<oneway id="482" x="684134.5078605" y="4829385.083800999" freeparking="2">
+			<vehicle vehicleID="OW_940" type="car"/>
+			<electrovehicle vehicleID="OW_939" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_941" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_343" power="3.3"/>
+			<charger chargerID="ch_344" power="3.3"/>
+		</oneway>
+		<oneway id="483" x="684302.2489015" y="4824268.893283" freeparking="2">
+			<electrovehicle vehicleID="OW_942" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_345" power="3.3"/>
+		</oneway>
+		<oneway id="484" x="680926.0070110001" y="4821433.318255" freeparking="2">
+			<electrovehicle vehicleID="OW_943" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_944" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_945" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_346" power="3.3"/>
+			<charger chargerID="ch_347" power="3.3"/>
+			<charger chargerID="ch_348" power="3.3"/>
+		</oneway>
+		<oneway id="485" x="685580.1382605" y="4828015.9021345" freeparking="2">
+			<vehicle vehicleID="OW_947" type="car"/>
+			<electrovehicle vehicleID="OW_946" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="486" x="681907.5129085" y="4825821.942527" freeparking="2">
+			<vehicle vehicleID="OW_948" type="car"/>
+			<vehicle vehicleID="OW_949" type="car"/>
+			<electrovehicle vehicleID="OW_950" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="487" x="683172.5442655" y="4826009.406365501" freeparking="2">
+			<electrovehicle vehicleID="OW_951" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_952" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_953" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_349" power="3.3"/>
+		</oneway>
+		<oneway id="488" x="683523.6601410001" y="4823743.238614" freeparking="2">
+			<electrovehicle vehicleID="OW_954" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="489" x="680651.4624015" y="4824240.3448675" freeparking="2">
+			<vehicle vehicleID="OW_955" type="car"/>
+			<electrovehicle vehicleID="OW_956" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_957" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+		</oneway>
+		<oneway id="490" x="685434.1972145" y="4825826.7558335" freeparking="2">
+			<electrovehicle vehicleID="OW_958" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_959" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="491" x="681671.931108" y="4824931.63596" freeparking="2">
+			<electrovehicle vehicleID="OW_960" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_961" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_962" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_350" power="3.3"/>
+			<charger chargerID="ch_351" power="3.3"/>
+		</oneway>
+		<oneway id="492" x="685972.7060255001" y="4823796.744918499" freeparking="2">
+			<vehicle vehicleID="OW_963" type="car"/>
+			<electrovehicle vehicleID="OW_964" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_965" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="493" x="686237.588201" y="4823216.5300455" freeparking="2">
+			<electrovehicle vehicleID="OW_966" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="494" x="678664.711066" y="4830338.3920680005" freeparking="2">
+			<electrovehicle vehicleID="OW_967" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_968" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_352" power="3.3"/>
+		</oneway>
+		<oneway id="495" x="679035.1212885" y="4821578.7733875" freeparking="2">
+			<electrovehicle vehicleID="OW_969" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="496" x="681839.6628345" y="4822070.6851715" freeparking="2">
+			<vehicle vehicleID="OW_971" type="car"/>
+			<electrovehicle vehicleID="OW_970" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_353" power="3.3"/>
+		</oneway>
+		<oneway id="497" x="684881.9741195" y="4822451.878312999" freeparking="2">
+			<vehicle vehicleID="OW_973" type="car"/>
+			<electrovehicle vehicleID="OW_972" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+		</oneway>
+		<oneway id="498" x="683624.67729" y="4821306.3907555" freeparking="2">
+			<electrovehicle vehicleID="OW_974" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_975" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_976" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_354" power="3.3"/>
+			<charger chargerID="ch_355" power="3.3"/>
+		</oneway>
+		<oneway id="499" x="679877.1950300001" y="4820614.6375295" freeparking="2">
+			<electrovehicle vehicleID="OW_977" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<electrovehicle vehicleID="OW_978" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<charger chargerID="ch_356" power="3.3"/>
+		</oneway>
+		<oneway id="500" x="686316.0114124999" y="4818916.4389555" freeparking="2">
+			<vehicle vehicleID="OW_979" type="car"/>
+			<electrovehicle vehicleID="OW_980" type="ecar" batteryCapacity="60.0" energyConsumption="2.3999999999999998E-4"/>
+			<electrovehicle vehicleID="OW_981" type="ecar" batteryCapacity="20.0" energyConsumption="1.7E-4"/>
+			<charger chargerID="ch_357" power="3.3"/>
+			<charger chargerID="ch_358" power="3.3"/>
+		</oneway>
+	</company>
+</companies>
