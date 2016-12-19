@@ -22,21 +22,26 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 	private static int counter = 0;
 	private static int counterOW = 1;
 	private static int counterch = 1;
-	private static int numberOfStations = 500; // TODO: maybe add as share of total links?
+	private static int numberOfStations = 25; // TODO: maybe add as share of total links?
 	
 	private static int freeparking = 2;
 	
 	// EV additions
-	private static int lowBattCapa = 20;
-	private static int highBattCapa = 60;
-	private static double lowEnCons = 0.17; // kWh/km
+	//private static int lowBattCapa = 20; // kWh
+	private static int lowBattCapa = 6; // kWh
+
+	private static int highBattCapa = 60;// kWh
+	//private static double lowEnCons = 0.17; // kWh/km 
+	private static double lowEnCons = 0.08; // kWh/km 
 	private static double highEnCons = 0.24; // kWh/km
 	private static double chargerPower = 3.3;
 
-	double shareOfBEV = 0.7; // Format: 0-1
+	double shareOfBEV = 1; // Format: 0-1
 	double shareOfChargersTotal = 0.8; // Format: 0-1
 	double shareOfChargersPerStation = 0.5; // Format: 0-1
-	int maxNumberOfCarsPerStation = 3;
+	double shareOfHighRange = 0;
+	
+	int maxNumberOfCarsPerStation = 2;
 
 	
 	public PlaceStationsVehicles(Scenario scenario) {
@@ -151,12 +156,13 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 			
 			if (random.nextDouble() < shareOfBEV){
 				
-				atts.add(new Tuple<>("type", "ecar"));
 
-				if (random.nextDouble() < 0.5){
+				if (random.nextDouble() < shareOfHighRange){
+					atts.add(new Tuple<>("type", "ecar_highrange"));
 					atts.add(new Tuple<>("batteryCapacity", Double.toString(highBattCapa)));
-					atts.add(new Tuple<>("energyConsumption", Double.toString(highEnCons/1000)));
+					atts.add(new Tuple<>("energyConsumption", Double.toString(highEnCons/1000))); // convert to meters
 				} else {
+					atts.add(new Tuple<>("type", "ecar_lowrange"));
 					atts.add(new Tuple<>("batteryCapacity", Double.toString(lowBattCapa)));
 					atts.add(new Tuple<>("energyConsumption", Double.toString(lowEnCons/1000)));
 				}
