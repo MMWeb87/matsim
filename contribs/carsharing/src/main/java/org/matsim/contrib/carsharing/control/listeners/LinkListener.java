@@ -5,13 +5,18 @@ import org.matsim.api.core.v01.Scenario;
 import org.matsim.api.core.v01.events.LinkLeaveEvent;
 import org.matsim.api.core.v01.events.handler.LinkLeaveEventHandler;
 import org.matsim.api.core.v01.network.Link;
+import org.matsim.contrib.carsharing.manager.supply.CarsharingSupplyInterface;
 import org.matsim.contrib.carsharing.vehicles.BEVehicle;
+import org.matsim.contrib.carsharing.vehicles.CSVehicle;
+import org.matsim.contrib.carsharing.vehicles.StationBasedBEV;
 import org.matsim.vehicles.Vehicle;
 
 import com.google.inject.Inject;
 
 
 public class LinkListener implements LinkLeaveEventHandler {
+	
+	@Inject CarsharingSupplyInterface carsharingSupplyInterface;
 	
 	@Inject Scenario scenario;	
 
@@ -33,11 +38,12 @@ public class LinkListener implements LinkLeaveEventHandler {
 	
 		// Vehicles	
 		Id<Vehicle> vehicleID = event.getVehicleId();
-		Vehicle vehicleOnLink = scenario.getVehicles().getVehicles().get(vehicleID);
+		CSVehicle vehicleOnLink = carsharingSupplyInterface.getAllVehicles().get(vehicleID.toString());
+		
 		
 		// Uncharge Vehicle
-		if(vehicleOnLink instanceof BEVehicle){
-			((BEVehicle)vehicleOnLink).driveAndUncharge(linkLength);
+		if(vehicleOnLink instanceof StationBasedBEV){
+			((StationBasedBEV)vehicleOnLink).driveAndUncharge(linkLength);
 		}
 		
 	}

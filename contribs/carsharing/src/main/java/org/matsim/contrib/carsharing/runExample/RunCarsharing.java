@@ -8,6 +8,8 @@ import org.apache.log4j.Logger;
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.contrib.carsharing.config.CarsharingConfigGroup;
 import org.matsim.contrib.carsharing.control.listeners.CarsharingListener;
+import org.matsim.contrib.carsharing.control.listeners.LinkListener;
+import org.matsim.contrib.carsharing.control.listeners.SimStepListener;
 import org.matsim.contrib.carsharing.events.handlers.PersonArrivalDepartureHandler;
 import org.matsim.contrib.carsharing.manager.CarsharingManagerInterface;
 import org.matsim.contrib.carsharing.manager.CarsharingManagerNew;
@@ -87,6 +89,8 @@ public class RunCarsharing {
 
 		final MembershipContainer memberships = membershipReader.getMembershipContainer();
 		
+		// TODO: modify cost structure
+		
 		final CostsCalculatorContainer costsCalculatorContainer = CarsharingUtils.createCompanyCostsStructure(carsharingCompanies);
 		
 		final CarsharingListener carsharingListener = new CarsharingListener();
@@ -137,10 +141,14 @@ public class RunCarsharing {
 			public void install() {
 				bindMobsim().toProvider(CarsharingQsimFactoryNew.class);
 		        addControlerListenerBinding().toInstance(carsharingListener);
-		        addControlerListenerBinding().to(CarsharingManagerNew.class);		        
+		        addControlerListenerBinding().to(CarsharingManagerNew.class);		
+		        addMobsimListenerBinding().to(SimStepListener.class);		
 				bindScoringFunctionFactory().to(CarsharingScoringFunctionFactory.class);		      
 		        addEventHandlerBinding().to(PersonArrivalDepartureHandler.class);
 		        addEventHandlerBinding().to(DemandHandler.class);
+		        addEventHandlerBinding().to(LinkListener.class);
+
+		        // TODO Put event handlers here during simulation
 			}
 		});
 		//=== adding carsharing specific scoring factory ===
