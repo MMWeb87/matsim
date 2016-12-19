@@ -95,5 +95,13 @@ public class TwoWayContainer implements VehiclesContainer{
 	public void reserveParking(Link destinationLink) {
 		// TODO Auto-generated method stub
 		
+	}
+
+
+	@Override
+	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String typeOfVehicle, double searchDstance,
+			double distance, double time) {
+		// TODO Auto-generated method stub
+		return null;
 	}		
 }

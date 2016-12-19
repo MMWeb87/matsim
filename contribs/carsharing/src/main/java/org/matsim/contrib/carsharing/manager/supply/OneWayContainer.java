@@ -6,12 +6,17 @@ import java.util.Map;
 
 import org.matsim.api.core.v01.Coord;
 import org.matsim.api.core.v01.network.Link;
+import org.matsim.contrib.carsharing.events.NoChargedBEVEvent;
+import org.matsim.contrib.carsharing.events.StartRentalEvent;
 import org.matsim.contrib.carsharing.stations.CarsharingStation;
 import org.matsim.contrib.carsharing.stations.OneWayCarsharingStation;
 import org.matsim.contrib.carsharing.vehicles.BEVehicle;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
+import org.matsim.core.api.experimental.events.EventsManager;
 import org.matsim.core.utils.collections.QuadTree;
 import org.matsim.core.utils.geometry.CoordUtils;
+
+import com.google.inject.Inject;
 
 /** 
  * @author balac
@@ -19,7 +24,10 @@ import org.matsim.core.utils.geometry.CoordUtils;
 public class OneWayContainer implements VehiclesContainer{	
 	
 	private QuadTree<CarsharingStation> owvehicleLocationQuadTree;	
-	private Map<CSVehicle, Link> owvehiclesMap ;	
+	private Map<CSVehicle, Link> owvehiclesMap ;
+
+	@Inject private EventsManager eventsManager;
+
 	
 	public OneWayContainer(QuadTree<CarsharingStation> owvehicleLocationQuadTree2,
 			Map<CSVehicle, Link> owvehiclesMap2) {
@@ -28,21 +36,29 @@ public class OneWayContainer implements VehiclesContainer{
 	}
 	
 	public double distance; // Added by Marc
+	public double time;
 
 	public void reserveVehicle(CSVehicle vehicle) {
 		Link link = this.owvehiclesMap.get(vehicle);
 		Coord coord = link.getCoord();
 		this.owvehiclesMap.remove(vehicle);			
-		CarsharingStation station = owvehicleLocationQuadTree.getClosest(coord.getX(), coord.getY());
+		Collection<CarsharingStation> stations = owvehicleLocationQuadTree.getDisk(coord.getX(), coord.getY(), 0.0);
 		
-		((OneWayCarsharingStation)station).removeCar(vehicle);		
+		for (CarsharingStation cs : stations) {
+			if (((OneWayCarsharingStation)cs).getVehicles(vehicle.getType()).contains(vehicle))
+				((OneWayCarsharingStation)cs).removeCar(vehicle);		
+
+		}
+		
 	}
 
 	public void parkVehicle(CSVehicle vehicle, Link link) {
 		Coord coord = link.getCoord();			
 		owvehiclesMap.put(vehicle, link);			
 		CarsharingStation station = owvehicleLocationQuadTree.getClosest(coord.getX(), coord.getY());
-		((OneWayCarsharingStation)station).addCar(vehicle.getType(),  vehicle);	
+		// TODO: bugfix. Sideeffects?
+		if(vehicle != null)
+			((OneWayCarsharingStation)station).addCar(vehicle.getType(),  vehicle);
 		
 	}	
 	
@@ -64,8 +80,7 @@ public class OneWayContainer implements VehiclesContainer{
 	 * @author: Marc Melliger (added BEV implementation)
 	 */
 	@Override
-	public CSVehicle findClosestAvailableVehicle(Link startLink, String typeOfVehicle, double searchDstance) {
-
+	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String typeOfVehicle, double searchDstance, double distance, double time){
 
 		//find the closest available car and reserve it (make it unavailable)
 		//if no cars within certain radius return null
@@ -87,10 +102,18 @@ public class OneWayContainer implements VehiclesContainer{
 				// which couldn't be reserved
 				// TODO: also add to rejection rate
 				// TODO: rule for charging on the way
+				
 					
 				if(!hasOnlyUnchargedBEVehicles(station, typeOfVehicle, distance)){
 					closest = station;
 					closestFound = CoordUtils.calcEuclideanDistance(startLink.getCoord(), coord);
+					
+					
+				} else {
+					// has only unsufficiently charged cars for trip.
+					
+					eventsManager.processEvent(new NoChargedBEVEvent(time, "OW", station, typeOfVehicle, distance));
+
 				}
 				
 			}
@@ -121,7 +144,59 @@ public class OneWayContainer implements VehiclesContainer{
 			}
 						
 			return vehicleToBeUsed;
+		} else{
+			// Could not find any vehicle
+		}
+		return null;
+		
+		
+	}
+
+	
+	/* (non-Javadoc)
+	 * @see org.matsim.contrib.carsharing.manager.supply.VehiclesContainer#findClosestAvailableVehicle(org.matsim.api.core.v01.network.Link, java.lang.String, double)
+	 * 
+	 */
+	@Override
+	public CSVehicle findClosestAvailableVehicle(Link startLink, String typeOfVehicle, double searchDstance) {
+
+
+		//find the closest available car and reserve it (make it unavailable)
+		//if no cars within certain radius return null
+		Collection<CarsharingStation> location = 
+				owvehicleLocationQuadTree.getDisk(startLink.getCoord().getX(), 
+						startLink.getCoord().getY(), searchDstance);
+		if (location.isEmpty()) return null;
+
+		CarsharingStation closest = null;
+		double closestFound = searchDstance;
+		for(CarsharingStation station: location) {
+			
+			Coord coord = station.getLink().getCoord();
+						
+			if (CoordUtils.calcEuclideanDistance(startLink.getCoord(), coord) < closestFound 
+					&& ((OneWayCarsharingStation)station).getNumberOfVehicles(typeOfVehicle) > 0) {
+				
+					closest = station;
+					closestFound = CoordUtils.calcEuclideanDistance(startLink.getCoord(), coord);
+				
+			}
 		}		
+		if (closest != null) {
+
+			
+			ArrayList<CSVehicle> potentialVehiclesToBeUsed = ((OneWayCarsharingStation)closest).getVehicles(typeOfVehicle);
+			CSVehicle vehicleToBeUsed = null; // TODO: check if no errors
+			
+			for(CSVehicle vehicle: potentialVehiclesToBeUsed){
+				vehicleToBeUsed = vehicle;
+				
+			}
+						
+			return vehicleToBeUsed;
+		} else{
+			// Could not find any vehicle
+		}
 		return null;
 		
 		

@@ -26,6 +26,11 @@ public interface CarsharingSupplyInterface {
 
 	Set<String> getCompanyNames();
 	
+	// hack for BEV
 	public void setDistance(double distance);
+	public void setTime(double time);
+
+	CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String carsharingType, String typeOfVehicle, String companyId,
+			double searchDistance, double distance, double time);
 
 }

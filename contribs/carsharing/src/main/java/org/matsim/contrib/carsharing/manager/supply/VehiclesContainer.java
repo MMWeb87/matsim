@@ -11,7 +11,11 @@ public interface VehiclesContainer {
 	public void parkVehicle(CSVehicle vehicle, Link link);
 	public Link getVehicleLocation(CSVehicle vehicle);
 	public CSVehicle findClosestAvailableVehicle(Link startLink, String typeOfVehicle, double searchDistance);
+	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String typeOfVehicle, double searchDstance,
+			double distance, double time);
+
 	public Link findClosestAvailableParkingLocation(Link destinationLink, double searchDistance);
 	public void reserveParking(Link destinationLink);
-
+	
+	
 }

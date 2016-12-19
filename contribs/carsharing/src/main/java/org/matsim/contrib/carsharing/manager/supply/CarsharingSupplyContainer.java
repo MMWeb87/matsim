@@ -26,6 +26,7 @@ public class CarsharingSupplyContainer implements CarsharingSupplyInterface {
 	
 	// TODO:implement better 
 	public double distance;
+	public double time;
 	
 	public CarsharingSupplyContainer(Scenario scenario) {
 		this.scenario = scenario;
@@ -76,6 +77,18 @@ public class CarsharingSupplyContainer implements CarsharingSupplyInterface {
 		CompanyContainer companyContainer = this.companies.get(companyId);
 		VehiclesContainer vehiclesContainer = companyContainer.getVehicleContainer(carsharingType);
 		return vehiclesContainer.findClosestAvailableVehicle(startLink, typeOfVehicle, searchDistance);		
+	}		
+
+	/* (non-Javadoc)
+	 * @see org.matsim.contrib.carsharing.manager.supply.CarsharingSupplyInterface#findClosestAvailableVehicle(org.matsim.api.core.v01.network.Link, java.lang.String, java.lang.String, java.lang.String, double)
+	 */
+	@Override
+	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String carsharingType, String typeOfVehicle,
+			String companyId, double searchDistance, double distance, double time) {
+		
+		CompanyContainer companyContainer = this.companies.get(companyId);
+		VehiclesContainer vehiclesContainer = companyContainer.getVehicleContainer(carsharingType);
+		return vehiclesContainer.findClosestAvailableVehicleWithCharge(startLink, typeOfVehicle, searchDistance, distance, time);		
 	}		
 
 	/* (non-Javadoc)
@@ -131,5 +144,11 @@ public class CarsharingSupplyContainer implements CarsharingSupplyInterface {
 	 */
 	public void setDistance(double distance) {
 		this.distance = distance;
+	}
+
+	@Override
+	public void setTime(double time) {
+		this.time = time;
+		
 	}	
 }

@@ -26,17 +26,20 @@ public class OneWayCarsharingStation implements CarsharingStation{
 		this.numberOfvehiclesPerType = numberOfvehiclesPerType;
 		this.vehiclesPerType = vehiclesPerType;
 		this.setAvaialbleParkingSpots(availableParkingSpots);
-// this.chargingMachine = chargingMachine;
 	}
 	
 	public int getNumberOfVehicles(String type) {
-		
-		return this.numberOfvehiclesPerType.get(type);
+		if (this.numberOfvehiclesPerType.containsKey(type))
+			return this.numberOfvehiclesPerType.get(type);
+		else
+			return 0;
 	}	
 	
 	public ArrayList<CSVehicle> getVehicles(String type) {
-		
-		return this.vehiclesPerType.get(type);
+		if (this.vehiclesPerType.containsKey(type))
+			return this.vehiclesPerType.get(type);
+		else
+			return new ArrayList<CSVehicle>();
 	}	
 
 	public void removeCar(String type, CSVehicle vehicle) {
@@ -54,13 +57,23 @@ public class OneWayCarsharingStation implements CarsharingStation{
 	}
 	*/
 	public void addCar(String type, CSVehicle vehicle){
-		
-		ArrayList<CSVehicle> currentVehicles = this.vehiclesPerType.get(type);		
-		currentVehicles.add(vehicle);
-		int currentNumberOfVehicles = this.numberOfvehiclesPerType.get(type);
-		currentNumberOfVehicles++;
-		this.numberOfvehiclesPerType.put(type, currentNumberOfVehicles);	
+        
+        ArrayList<CSVehicle> currentVehicles = this.vehiclesPerType.get(type);           
+       
+        if (currentVehicles == null)
+               currentVehicles = new ArrayList<CSVehicle>();
+       
+        currentVehicles.add(vehicle);
+        this.vehiclesPerType.put(type, currentVehicles);
+        if (this.numberOfvehiclesPerType.get(type) == null)
+               this.numberOfvehiclesPerType.put(type, 1);     
+        else {
+               int currentNumberOfVehicles = this.numberOfvehiclesPerType.get(type);
+               currentNumberOfVehicles++;
+               this.numberOfvehiclesPerType.put(type, currentNumberOfVehicles);
+        }
 	}
+
 
 	@Override
 	public String getStationId() {
