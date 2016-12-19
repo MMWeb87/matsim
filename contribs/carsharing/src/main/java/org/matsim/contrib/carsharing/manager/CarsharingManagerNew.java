@@ -113,6 +113,9 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 			String typeOfVehicle = chooseVehicleType.getPreferredVehicleType(plan, legToBeRouted);
 
 			String companyId = chooseCompany.pickACompany(plan, legToBeRouted, time, typeOfVehicle);
+			
+			double distance = 0;
+			
 			if (!companyId.equals("")) {
 					
 				// Relevant distance for reservation of BEV -> estimate if enough charge for destination 
@@ -121,16 +124,18 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 					// --> For now like 1.2 time air distance?
 					double distanceFactor = 1.2;
 					
-					double distance = distanceFactor * CoordUtils.calcEuclideanDistance(startLink.getCoord(), destinationLink.getCoord());
-					
+					distance = distanceFactor * CoordUtils.calcEuclideanDistance(startLink.getCoord(), destinationLink.getCoord());
+				
 					//OneWayContainer test = (OneWayContainer)this.carsharingSupplyContainer; TODO: why can not cast? 
 					
-					this.carsharingSupplyContainer.setDistance(distance);
+					//this.carsharingSupplyContainer.setDistance(distance);
+					//this.carsharingSupplyContainer.setTime(time);
+
 				}
 				
 				
-				vehicle = this.carsharingSupplyContainer.findClosestAvailableVehicle(startLink,
-						carsharingType, typeOfVehicle, companyId, searchDistance);
+				vehicle = this.carsharingSupplyContainer.findClosestAvailableVehicleWithCharge(startLink,
+						carsharingType, typeOfVehicle, companyId, searchDistance, distance, time);
 				if (vehicle == null)
 					return null;			
 				CompanyContainer companyContainer = this.carsharingSupplyContainer.getCompany(companyId);
