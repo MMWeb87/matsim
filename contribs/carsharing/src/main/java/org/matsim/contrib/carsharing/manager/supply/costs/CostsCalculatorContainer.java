@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.matsim.contrib.carsharing.manager.demand.RentalInfo;
+import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 /** 
  * @author balac
  */
@@ -20,9 +21,9 @@ public class CostsCalculatorContainer {
 
 
 
-	public double getCost(String company, String carsharingType, RentalInfo rentalInfo) {
+	public double getCost(String company, String carsharingType, RentalInfo rentalInfo, CSVehicle vehicle) {
 		
-		return this.companyCostsMap.get(company).calcCost(carsharingType, rentalInfo);
+		return this.companyCostsMap.get(company).calcCost(carsharingType, rentalInfo, vehicle);
 	}
 	
 

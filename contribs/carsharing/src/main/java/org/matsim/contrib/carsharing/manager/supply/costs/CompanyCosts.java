@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.matsim.contrib.carsharing.manager.demand.RentalInfo;
+import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 /** 
  * @author balac
  */
@@ -16,9 +17,9 @@ public class CompanyCosts {
 		this.perTypeCostCalculator = perTypeCostCalculator;
 	}
 	
-	public double calcCost(String carsharingType, RentalInfo rentalInfo) {
+	public double calcCost(String carsharingType, RentalInfo rentalInfo, CSVehicle vehicle) {
 		
-		return this.perTypeCostCalculator.get(carsharingType).getCost(rentalInfo);
+		return this.perTypeCostCalculator.get(carsharingType).getCost(rentalInfo, vehicle);
 	}
 
 }
