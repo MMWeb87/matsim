@@ -12,6 +12,7 @@ import org.matsim.contrib.carsharing.manager.demand.AgentRentals;
 import org.matsim.contrib.carsharing.manager.demand.DemandHandler;
 import org.matsim.contrib.carsharing.manager.demand.RentalInfo;
 import org.matsim.contrib.carsharing.manager.supply.CarsharingSupplyInterface;
+import org.matsim.contrib.carsharing.vehicles.BEVehicle;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 import org.matsim.core.controler.MatsimServices;
 import org.matsim.core.controler.events.IterationEndsEvent;
@@ -41,7 +42,7 @@ public class CarsharingListener implements IterationEndsListener{
 		Map<Id<Person>, AgentRentals> agentRentalsMap = demandHandler.getAgentRentalsMap();
 		final BufferedWriter outLink = IOUtils.getBufferedWriter(this.controler.getControlerIO().getIterationFilename(event.getIteration(), "CS.txt"));
 		try {
-			outLink.write("personID,carsharingType,startTime,endTIme,startLink,pickupLink,dropoffLink,endLink,distance,inVehicleTime,accessTime,egressTime,vehicleID");
+			outLink.write("personID,carsharingType,startTime,endTIme,startLink,pickupLink,dropoffLink,endLink,distance,inVehicleTime,accessTime,egressTime,vehicleID,companyID,carsharingType, chargingLevel");
 			outLink.newLine();		
 		
 		for (Id<Person> personId: agentRentalsMap.keySet()) {
@@ -49,7 +50,7 @@ public class CarsharingListener implements IterationEndsListener{
 			
 			for (RentalInfo i : agentRentalsMap.get(personId).getArr()) {
 				CSVehicle vehicle = this.carsharingSupply.getAllVehicles().get(i.getVehId().toString());
-				outLink.write(personId + "," + i.toString() + "," + vehicle.getCompanyId() + "," + vehicle.getType());
+				outLink.write(personId + "," + i.toString() + "," + vehicle.getCompanyId() + "," + vehicle.getType() +  "," + ((BEVehicle)vehicle).getChargingLevel() );
 				outLink.newLine();
 			}
 			
