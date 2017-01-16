@@ -25,7 +25,8 @@ public class OneWayCarsharingStationWithCharger extends OneWayCarsharingStation 
 	public void removeCar(CSVehicle vehicle) {
 		
 		super.removeCar(vehicle);
-		((BEVehicle)vehicle).removeCharger();		
+		if(((BEVehicle)vehicle).getAttachedCharger()!=null)
+			((BEVehicle)vehicle).removeCharger();		
 		
 	}
 

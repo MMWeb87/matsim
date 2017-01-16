@@ -65,7 +65,7 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 		
 		boolean keepTheCar = keepTheCarModel.keepTheCarDuringNextActivity(durationOfNextActivity, plan.getPerson(), carsharingType);	
 		//TODO: create a method for getting the search distance
-		double searchDistance = 1000.0;
+		double searchDistance = 10000.0;
 
 		// Agents has already a vehicle.
 		if (vehicle != null) {

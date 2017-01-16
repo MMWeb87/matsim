@@ -34,7 +34,7 @@ public class LinkListener implements LinkLeaveEventHandler {
 		Link link = scenario.getNetwork().getLinks().get(LinkID);
 		
 		// Link length
-		double linkLength = link.getLength();
+		//double linkLength = link.getLength();
 	
 		// Vehicles	
 		Id<Vehicle> vehicleID = event.getVehicleId();
@@ -43,7 +43,7 @@ public class LinkListener implements LinkLeaveEventHandler {
 		
 		// Uncharge Vehicle
 		if(vehicleOnLink instanceof StationBasedBEV){
-			((StationBasedBEV)vehicleOnLink).driveAndUncharge(linkLength);
+			((StationBasedBEV)vehicleOnLink).driveAndUncharge(link);
 		}
 		
 	}

@@ -14,6 +14,11 @@ public class ChargingVehicles {
 	private static HashSet<StationBasedBEV> chargingVehicles;
 	
 	public static void addToChargingVehicles(StationBasedBEV vehicle){
+		
+		if(chargingVehicles==null){
+			chargingVehicles = new HashSet<>();
+		}
+		
 		chargingVehicles.add(vehicle);
 	}
 	

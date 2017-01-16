@@ -10,8 +10,10 @@ import org.matsim.contrib.carsharing.events.NoChargedBEVEvent;
 import org.matsim.contrib.carsharing.events.StartRentalEvent;
 import org.matsim.contrib.carsharing.stations.CarsharingStation;
 import org.matsim.contrib.carsharing.stations.OneWayCarsharingStation;
+import org.matsim.contrib.carsharing.stations.OneWayCarsharingStationWithCharger;
 import org.matsim.contrib.carsharing.vehicles.BEVehicle;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
+import org.matsim.contrib.carsharing.vehicles.StationBasedBEV;
 import org.matsim.core.api.experimental.events.EventsManager;
 import org.matsim.core.utils.collections.QuadTree;
 import org.matsim.core.utils.geometry.CoordUtils;
@@ -59,6 +61,20 @@ public class OneWayContainer implements VehiclesContainer{
 		// TODO: bugfix. Sideeffects?
 		if(vehicle != null)
 			((OneWayCarsharingStation)station).addCar(vehicle.getType(),  vehicle);
+		
+		
+		if(vehicle instanceof StationBasedBEV){
+			if(station instanceof OneWayCarsharingStationWithCharger){
+				if(((OneWayCarsharingStationWithCharger)station).getCharger()!=null){
+						((StationBasedBEV) vehicle).attachCharger(((OneWayCarsharingStationWithCharger)station).getCharger());
+						// Put Charging Level into HashMap for analysis 
+						((StationBasedBEV) vehicle).getChargingLevels().put(link.getId(), ((StationBasedBEV) vehicle).getChargingLevel());
+						}
+				
+				// TODO: put into array.
+			}
+		}
+			
 		
 	}	
 	

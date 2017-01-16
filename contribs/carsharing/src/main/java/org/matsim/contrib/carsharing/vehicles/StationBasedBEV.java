@@ -1,6 +1,11 @@
 package org.matsim.contrib.carsharing.vehicles;
 
+import java.util.HashMap;
+
+import org.matsim.api.core.v01.Id;
+import org.matsim.api.core.v01.network.Link;
 import org.matsim.contrib.carsharing.stations.Charger;
+import org.matsim.contrib.carsharing.stations.ChargingVehicles;
 
 /** 
  * Battery Electric Vehicle Object. 
@@ -14,6 +19,7 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 	private double batteryCapacity; //kWh 
 	private boolean fullyCharged;
 	private Charger attachedCharger = null;
+	private HashMap<Id<Link>,Double> chargingLevels;
 
 	public StationBasedBEV(String vehicleType, String vehicleId, 
 			String stationId, String csType, String companyId,
@@ -27,6 +33,8 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 		// fully charge all Vehicles in the beginning
 		chargingLevel = batteryCapacity; 
 		fullyCharged = true;
+		
+		chargingLevels = new HashMap<>();
 		
 
 	}	
@@ -54,10 +62,19 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 		} else if(chargingLevel < 0){
 			this.chargingLevel = 0;
 			fullyCharged = false;
-
 		}
+		
+		
 	}
 	
+	public HashMap<Id<Link>,Double> getChargingLevels() {
+		return chargingLevels;
+	}
+
+	public void setChargingLevels(HashMap<Id<Link>,Double> chargingLevels) {
+		this.chargingLevels = chargingLevels;
+	}
+
 	public void charge(double charge){
 		setChargingLevel(getChargingLevel()+charge);
 	}
@@ -89,18 +106,24 @@ public class StationBasedBEV extends StationBasedVehicle implements CSVehicle, B
 
 	public void attachCharger(Charger attachedCharger) {
 		this.attachedCharger = attachedCharger;
+		ChargingVehicles.addToChargingVehicles(this);
 	}
 
 	public void removeCharger() {
 		this.attachedCharger = null;
+		ChargingVehicles.removeFromChargingVehicles(this);
 	}
 	
 	/**
 	 * @param distance Distance in meters
 	 */
-	public void driveAndUncharge(double distance){
+	public void driveAndUncharge(Link link){
 		
+		double distance = link.getLength();
 		uncharge(energyConsumption * distance);
+		
+		//chargingLevels.put(link.getId(), chargingLevel);
+		
 		
 	}
 
