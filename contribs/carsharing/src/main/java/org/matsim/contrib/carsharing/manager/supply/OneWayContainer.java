@@ -115,10 +115,7 @@ public class OneWayContainer implements VehiclesContainer{
 					&& ((OneWayCarsharingStation)station).getNumberOfVehicles(typeOfVehicle) > 0) {
 				
 				// There is a station with Vehicles, need to check if there are not only uncharged BEV
-				// which couldn't be reserved
-				// TODO: also add to rejection rate
-				// TODO: rule for charging on the way
-				
+				// which couldn't be reserved				
 					
 				if(!hasOnlyUnchargedBEVehicles(station, typeOfVehicle, distance)){
 					closest = station;
@@ -126,7 +123,9 @@ public class OneWayContainer implements VehiclesContainer{
 					
 					
 				} else {
-					// has only unsufficiently charged cars for trip.
+					// No vehicle could be reserved at the intended stations 
+					// because it only has unsufficiently charged vehicles for trip.
+					// -> rejection rate.
 					
 					eventsManager.processEvent(new NoChargedBEVEvent(time, "OW", station, typeOfVehicle, distance));
 
