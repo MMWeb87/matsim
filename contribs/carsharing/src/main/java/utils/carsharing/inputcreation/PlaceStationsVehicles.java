@@ -22,7 +22,7 @@ public class PlaceStationsVehicles extends MatsimXmlWriter {
 	private static int counter = 0;
 	private static int counterOW = 1;
 	private static int counterch = 1;
-	private static int numberOfStations = 25; // TODO: maybe add as share of total links?
+	private static int numberOfStations = 100; // TODO: maybe add as share of total links?
 	
 	private static int freeparking = 2;
 	

@@ -20,7 +20,7 @@ public class AssignMembership extends MatsimXmlWriter {
 	
 	private Scenario scenario;
 	
-	double shareOfChargersPerStation = 0.2; // Format: 0-1
+	double shareOfChargersPerStation = 0.4; // Format: 0-1
 
 	
 	public AssignMembership(Scenario scenario) {
