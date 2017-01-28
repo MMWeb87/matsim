@@ -1,4 +1,4 @@
-package org.matsim.contrib.carsharing.control.listeners;
+package org.matsim.contrib.carsharing.events.handlers;
 
 import org.matsim.api.core.v01.Id;
 import org.matsim.api.core.v01.Scenario;
@@ -6,7 +6,6 @@ import org.matsim.api.core.v01.events.LinkLeaveEvent;
 import org.matsim.api.core.v01.events.handler.LinkLeaveEventHandler;
 import org.matsim.api.core.v01.network.Link;
 import org.matsim.contrib.carsharing.manager.supply.CarsharingSupplyInterface;
-import org.matsim.contrib.carsharing.vehicles.BEVehicle;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 import org.matsim.contrib.carsharing.vehicles.StationBasedBEV;
 import org.matsim.vehicles.Vehicle;
@@ -14,7 +13,7 @@ import org.matsim.vehicles.Vehicle;
 import com.google.inject.Inject;
 
 
-public class LinkListener implements LinkLeaveEventHandler {
+public class LinkHandler implements LinkLeaveEventHandler {
 	
 	@Inject CarsharingSupplyInterface carsharingSupplyInterface;
 	
