@@ -16,7 +16,7 @@ public class ChooseVehicleTypeExample implements ChooseVehicleType {
 	public String getPreferredVehicleType(Plan plan, Leg currentLeg){
 		
 		
-		String vehicleType = "ecar_lowrange";
+		String vehicleType = "ecar";
 		return vehicleType;
 	}
 
