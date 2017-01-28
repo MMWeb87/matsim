@@ -135,7 +135,7 @@ public class CarsharingManagerNew implements CarsharingManagerInterface, Iterati
 				
 				
 				vehicle = this.carsharingSupplyContainer.findClosestAvailableVehicleWithCharge(startLink,
-						carsharingType, typeOfVehicle, companyId, searchDistance, distance, time);
+						carsharingType, typeOfVehicle, companyId, searchDistance, distance, time, eventsManager);
 				if (vehicle == null)
 					return null;			
 				CompanyContainer companyContainer = this.carsharingSupplyContainer.getCompany(companyId);

@@ -5,6 +5,7 @@ import java.util.Set;
 
 import org.matsim.api.core.v01.network.Link;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
+import org.matsim.core.api.experimental.events.EventsManager;
 
 public interface CarsharingSupplyInterface {
 
@@ -31,6 +32,6 @@ public interface CarsharingSupplyInterface {
 	public void setTime(double time);
 
 	CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String carsharingType, String typeOfVehicle, String companyId,
-			double searchDistance, double distance, double time);
+			double searchDistance, double distance, double time, EventsManager eventsManager);
 
 }

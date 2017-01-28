@@ -28,7 +28,7 @@ public class OneWayContainer implements VehiclesContainer{
 	private QuadTree<CarsharingStation> owvehicleLocationQuadTree;	
 	private Map<CSVehicle, Link> owvehiclesMap ;
 
-	@Inject private EventsManager eventsManager;
+	public EventsManager eventsManager;
 
 	
 	public OneWayContainer(QuadTree<CarsharingStation> owvehicleLocationQuadTree2,
@@ -64,11 +64,12 @@ public class OneWayContainer implements VehiclesContainer{
 		
 		
 		if(vehicle instanceof StationBasedBEV){
+			// Put Charging Level into HashMap for analysis 
+			((StationBasedBEV) vehicle).getChargingLevels().put(link.getId(), ((StationBasedBEV) vehicle).getChargingLevel());
+
 			if(station instanceof OneWayCarsharingStationWithCharger){
 				if(((OneWayCarsharingStationWithCharger)station).getCharger()!=null){
 						((StationBasedBEV) vehicle).attachCharger(((OneWayCarsharingStationWithCharger)station).getCharger());
-						// Put Charging Level into HashMap for analysis 
-						((StationBasedBEV) vehicle).getChargingLevels().put(link.getId(), ((StationBasedBEV) vehicle).getChargingLevel());
 						}
 				
 				// TODO: put into array.
@@ -96,7 +97,7 @@ public class OneWayContainer implements VehiclesContainer{
 	 * @author: Marc Melliger (added BEV implementation)
 	 */
 	@Override
-	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String typeOfVehicle, double searchDstance, double distance, double time){
+	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String typeOfVehicle, double searchDstance, double distance, double time, EventsManager eventsManager){
 
 		//find the closest available car and reserve it (make it unavailable)
 		//if no cars within certain radius return null
@@ -227,23 +228,52 @@ public class OneWayContainer implements VehiclesContainer{
 	 */
 	private boolean hasOnlyUnchargedBEVehicles(CarsharingStation station, String typeOfVehicle, double distance) {
 		
-		int unchargedOrNonBEV = 0;
+		
+		
+		int unchargedBEV = 0;
 		int SufficientlyChargedBEVehicles = 0;
 		
 		ArrayList<CSVehicle> vehicles = ((OneWayCarsharingStation)station).getVehicles(typeOfVehicle);
 		
+
+		
 		for (CSVehicle vehicle: vehicles){
-			if(sufficientlyChargedBEV(vehicle, distance)){
+			
+			if(vehicle instanceof BEVehicle){
+				
+				if(sufficientlyChargedBEV(vehicle, distance)){
+					SufficientlyChargedBEVehicles++;
+				}
+				else {
+					// no BEV or uncharged BEV
+					unchargedBEV++;
+				}
+
+			} else {
+				// The car is not a BEV -> sufficiently charged
 				SufficientlyChargedBEVehicles++;
 			}
-			else {
-				// no BEV or unchargeBEV
-				unchargedOrNonBEV++;
-			}
+			
 		}
+		// 2 cars charged
+		// 1 car insufficiently charges 
+		// -> has not only unsufficiently charged vehicles -> false
 		
-		if(SufficientlyChargedBEVehicles == 0 && unchargedOrNonBEV == 0){
-			// there are no sufficiently charge vehicles and no other cars -> only uncharged cars.
+		// 0 cars charged
+		// 1,2,3 car insufficiently charges 
+		// -> has only unsufficiently charged vehicles -> true
+		
+		// 1 cars charged
+		// 0 car insufficiently charges 
+		// -> has not only unsufficiently charged vehicles -> false
+		
+		// 0 cars charged
+		// 0 car insufficiently charges 
+		// -> not only unsufficiently charged vehicles -> true
+		
+		if(SufficientlyChargedBEVehicles == 0 && unchargedBEV >= 0){
+			// there are no sufficiently charged vehicles and no other cars -> only uncharged cars.
+			// TODO: Important: need to make rules, if normal ICEV cars are in scenario!
 			return true;
 		} else {
 			return false;
@@ -265,10 +295,14 @@ public class OneWayContainer implements VehiclesContainer{
 			// kWh/km * km
 			double chargeRequirement = ((BEVehicle) vehicle).getEnergyConsumption() * distance;
 			
+			double chargeLevel = ((BEVehicle) vehicle).getChargingLevel();
+			
 			// enough charge for this distance
-			if(((BEVehicle) vehicle).getChargingLevel() > chargeRequirement){
+			if( chargeLevel > chargeRequirement){
 				return true;
-			} 
+			} else {
+				return false;
+			}
 		} 
 		
 		return false;

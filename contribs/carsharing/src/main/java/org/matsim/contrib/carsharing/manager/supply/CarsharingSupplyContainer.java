@@ -12,6 +12,7 @@ import org.matsim.contrib.carsharing.config.FreeFloatingConfigGroup;
 import org.matsim.contrib.carsharing.config.FreefloatingAreasReader;
 import org.matsim.contrib.carsharing.readers.CarsharingXmlReaderNew;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
+import org.matsim.core.api.experimental.events.EventsManager;
 /** 
  * @author balac
  */
@@ -84,11 +85,11 @@ public class CarsharingSupplyContainer implements CarsharingSupplyInterface {
 	 */
 	@Override
 	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String carsharingType, String typeOfVehicle,
-			String companyId, double searchDistance, double distance, double time) {
+			String companyId, double searchDistance, double distance, double time, EventsManager eventsManager) {
 		
 		CompanyContainer companyContainer = this.companies.get(companyId);
 		VehiclesContainer vehiclesContainer = companyContainer.getVehicleContainer(carsharingType);
-		return vehiclesContainer.findClosestAvailableVehicleWithCharge(startLink, typeOfVehicle, searchDistance, distance, time);		
+		return vehiclesContainer.findClosestAvailableVehicleWithCharge(startLink, typeOfVehicle, searchDistance, distance, time, eventsManager);		
 	}		
 
 	/* (non-Javadoc)

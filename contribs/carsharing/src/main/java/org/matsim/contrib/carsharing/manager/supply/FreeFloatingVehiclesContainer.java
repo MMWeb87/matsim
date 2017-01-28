@@ -8,6 +8,7 @@ import org.matsim.api.core.v01.network.Link;
 import org.matsim.contrib.carsharing.qsim.FreefloatingAreas;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 import org.matsim.contrib.carsharing.vehicles.FFVehicleImpl;
+import org.matsim.core.api.experimental.events.EventsManager;
 import org.matsim.core.network.SearchableNetwork;
 import org.matsim.core.utils.collections.QuadTree;
 import org.matsim.core.utils.geometry.CoordUtils;
@@ -133,7 +134,7 @@ public class FreeFloatingVehiclesContainer implements VehiclesContainer{
 
 	@Override
 	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String typeOfVehicle, double searchDstance,
-			double distance, double time) {
+			double distance, double time, EventsManager eventsManager) {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -9,6 +9,7 @@ import org.matsim.contrib.carsharing.stations.CarsharingStation;
 import org.matsim.contrib.carsharing.stations.TwoWayCarsharingStation;
 import org.matsim.contrib.carsharing.vehicles.CSVehicle;
 import org.matsim.contrib.carsharing.vehicles.StationBasedVehicle;
+import org.matsim.core.api.experimental.events.EventsManager;
 import org.matsim.core.utils.collections.QuadTree;
 import org.matsim.core.utils.geometry.CoordUtils;
 /** 
@@ -100,7 +101,7 @@ public class TwoWayContainer implements VehiclesContainer{
 
 	@Override
 	public CSVehicle findClosestAvailableVehicleWithCharge(Link startLink, String typeOfVehicle, double searchDstance,
-			double distance, double time) {
+			double distance, double time, EventsManager eventsManager) {
 		// TODO Auto-generated method stub
 		return null;
 	}		
