@@ -25,6 +25,8 @@ public class NoChargedBEVEvent extends Event{
 		this.station = station;
 		this.typeOfVehicle = typeOfVehicle;
 		this.distance = distance;
+		
+		
 
 		// TODO Auto-generated constructor stub
 	}

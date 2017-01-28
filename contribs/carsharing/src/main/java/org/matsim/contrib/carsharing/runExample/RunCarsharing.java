@@ -8,8 +8,9 @@ import org.apache.log4j.Logger;
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.contrib.carsharing.config.CarsharingConfigGroup;
 import org.matsim.contrib.carsharing.control.listeners.CarsharingListener;
-import org.matsim.contrib.carsharing.control.listeners.LinkListener;
 import org.matsim.contrib.carsharing.control.listeners.SimStepListener;
+import org.matsim.contrib.carsharing.events.handlers.LinkHandler;
+import org.matsim.contrib.carsharing.events.handlers.NoChargedBEVHandler;
 import org.matsim.contrib.carsharing.events.handlers.PersonArrivalDepartureHandler;
 import org.matsim.contrib.carsharing.manager.CarsharingManagerInterface;
 import org.matsim.contrib.carsharing.manager.CarsharingManagerNew;
@@ -122,6 +123,7 @@ public class RunCarsharing {
 			    bind(CarsharingSupplyInterface.class).toInstance(carsharingSupplyContainer);
 			    bind(CarsharingManagerInterface.class).toInstance(carsharingManager);
 			    bind(DemandHandler.class).asEagerSingleton();
+			    bind(NoChargedBEVHandler.class).asEagerSingleton();
 			}			
 		});		
 		
@@ -146,7 +148,8 @@ public class RunCarsharing {
 				bindScoringFunctionFactory().to(CarsharingScoringFunctionFactory.class);		      
 		        addEventHandlerBinding().to(PersonArrivalDepartureHandler.class);
 		        addEventHandlerBinding().to(DemandHandler.class);
-		        addEventHandlerBinding().to(LinkListener.class);
+		        addEventHandlerBinding().to(LinkHandler.class);
+		        addEventHandlerBinding().to(NoChargedBEVHandler.class);
 
 		        // TODO Put event handlers here during simulation
 			}
